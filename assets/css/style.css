@@ -1,0 +1,79 @@
+/* 
+INFO: 
+Bootstrap is used here -> in order to overwrite, use: 
+    <selector>[theme]           for elements in all themes, 
+    <selector>[theme="dark"]    for elements only in dark mode,
+    <selector>[theme=light"]    for elements only in light mode
+*/
+
+/* Google font imports */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700');
+
+
+/* 01 General Parameters ------------------------------------- */
+html[theme="dark"] {
+    --text: #ecf0f1;
+    --accent: #e67e22;
+    --title: #1abc9c; 
+    --link: #48C9B0;
+    --bg: #2c3e50;
+    --bg2: #415065; /* still old one*/
+
+    --nav-bg: #2c3e50; 
+    
+    --link-text-hover: #48C9B0; 
+    --link-bg-hover: #00000000; 
+    
+    --act-bg: #1abc9c;  
+    --act-text: #000000; 
+    --act-border: #1abc9c;
+    
+    --act-bg-hover: #000000;  
+    --act-text-hover: #1abc9c; 
+    --act-border-hover: #1abc9c;
+    
+    --dis-text: #889E9C; 
+    --dis-bg: #A4B7B6; 
+    --dis-border: #A4B7B6;
+
+}
+
+html[theme="light"] {
+	--text: #2b2b2b;    /*or: 2c3e50*/
+	--accent: #c2881d;  /*or: e67e22*/
+	--title: #315a59;   /*or: 1abc9c*/
+	--link: #1b816c;    /*or: 48C9B0*/
+    --bg: #d8d8d8;      /*or: ecf0f1*/
+    --bg2: #d8d8d8;     /* still old */
+
+    --nav-bg: #2E3B4E;  /*or: 2c3e50*/
+
+    --link-text-hover: #1f917a;  /*or: 1abc9c */
+    --link-bg-hover: #00000000; 
+    
+    --act-bg: #1f917a;      /*or: 1abc9c */
+    --act-text: #000000;    /*or: 000000 */
+    --act-border: #1f917a;  /*or: 1abc9c */
+    
+    --act-bg-hover: #000000;       
+    --act-text-hover: #48C9B0;      /*or: 1abc9c */
+    --act-border-hover: #48C9B0;    /*or: 1abc9c */
+    
+    --dis-text: #889E9C;  
+    --dis-bg: #A4B7B6;  
+    --dis-border: #A4B7B6; 
+}
+
+
+/* 01 Generic STYLES that apply for all html pages --------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    
+}
+
+html[theme], body[theme] {
+    background-color: var(--bg);
+}
