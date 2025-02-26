@@ -8,19 +8,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Moonlight Studios</a>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/img/logo_01.jpg" alt="Moonlight Studios Logo" height="40" class="me-2">
+                <span class="brand">Moonlight Studios</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Über uns</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Leistungen</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link about" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link services" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link contact" href="#contact">Contact</a></li>
                     <li class="nav-item">
-                        <button class="btn btn-outline-secondary" id="theme-toggle">Dark Mode</button>
+                        <button class="btn btn-outline-light" id="theme-toggle">Light Mode</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light" id="language-toggle">DE</button>
                     </li>
                 </ul>
             </div>
@@ -29,9 +35,9 @@
     
     <header class="hero text-center text-white d-flex align-items-center">
         <div class="container">
-            <h1>Willkommen bei Moonlight Studios</h1>
-            <p>Professionelle Musikproduktion mit Leidenschaft</p>
-            <a href="#services" class="btn btn-primary">Mehr erfahren</a>
+            <h1 class="welcome-text">Welcome to Moonlight Studios</h1>
+            <p class="subtitle-text">Professional music production with passion</p>
+            <a href="#services" class="btn btn-primary learn-more-btn">Learn More</a>
         </div>
     </header>
     
