@@ -1,19 +1,9 @@
 {
-    "tHome":             "Home",
-    "tStudio":           "Studio",
-    "tTeam":             "Team",
-    "tServices":         "Services",
-    "tLogoAltText":      "Logo-Bild",
-    "tLandingPageText":  "A\n modern studio\n in a great community",
-    
-    "tWelcomeSection":       "Welcome to moonlight studios",
-    "tWelcomeSectionText":   "Some text which gives a little impression of who we are. Who will feel the most comfortable at our studio and music center. We are a small but modern studio realizing our hobby, strengthening our profession with a diploma in audio engineering. We do not make a secret of bein new but educated and professional enough.\n\nMaybe some \"between the lines\" what music suites us the best and what musical life style is typical for us.\n\nSome indication of what we do and what client and guests can expect from us.",
-    "tOurProd":              "Our production",
-    "tOurProdText":          "We don't offer just recording, but also mixing, mastering and other production tasks - separately. You can unders our services as a modular system: you request a single task to finish your production or you request us to accompany your project as a whole.\n\nIt's up to you!",
-    "tWhatSoundLike":        "What we sound like",
-    "tWhatSoundLikeText":    "Just to show what we are capable of is essential for the first impression. So, here are some takes. We chose 2 very different productions on purpose.",
-    
-    "tBtnContactUs":         "contact us",
-    "tBtnTellMeMore":        "tell me more"
-
-}
+    "brand": "Moonlight Studios",
+    "about": "Über uns",
+    "services": "Leistungen",
+    "contact": "Kontakt",
+    "welcome-text": "Willkommen bei Moonlight Studios",
+    "subtitle-text": "Professionelle Musikproduktion mit Leidenschaft",
+    "learn-more-btn": "Mehr erfahren"
+  }
