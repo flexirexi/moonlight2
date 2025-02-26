@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function loadLanguage(lang) {
         document.documentElement.lang = lang;
+        console.log("loadLanguage started: language; ", `locales/${lang}.json`);
         const response = await fetch(`locales/${lang}.json`);
         const texts = await response.json();
 
