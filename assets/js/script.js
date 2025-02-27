@@ -27,22 +27,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.getElementById("language-toggle").addEventListener("click", () => {
+        let oldLang = currentLang;
         currentLang = currentLang === "en" ? "de" : "en";
-        document.getElementById("language-toggle").textContent = currentLang.toUpperCase();
+        document.getElementById("language-toggle").textContent = oldLang.toUpperCase();
         loadLanguage(currentLang);
     });
 
     // Prüfen, ob ein gespeichertes Theme existiert
     const savedTheme = localStorage.getItem("theme") || "dark";
     html.setAttribute("theme", savedTheme);
-    themeToggle.textContent = savedTheme === "dark" ? "Light Mode" : "Dark Mode";
+    themeToggle.textContent = savedTheme === "dark" ? "Light" : "Dark";
 
     // Event-Listener für den Theme-Switch
     themeToggle.addEventListener("click", () => {
         const newTheme = html.getAttribute("theme") === "dark" ? "light" : "dark";
         html.setAttribute("theme", newTheme);
         localStorage.setItem("theme", newTheme);
-        themeToggle.textContent = newTheme === "dark" ? "Light Mode" : "Dark Mode";
+        themeToggle.textContent = newTheme === "dark" ? "Light" : "Dark";
     });
 
     loadLanguage(currentLang);
