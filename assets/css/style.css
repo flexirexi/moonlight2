@@ -14,10 +14,10 @@ Bootstrap is used here -> in order to overwrite, use:
 html[theme="dark"] {
     --text: #ecf0f1;
     --accent: #e67e22;
-    --title: #1abc9c; 
+    --title: #ecf0f1;   /*or: 1abc9c*/
     --link: #48C9B0;
     --bg: #2c3e50;
-    --bg2: #415065; /* still old one*/
+    --bg2: #415065;     /* still old one*/
 
     --nav-bg: #2c3e50; 
     
@@ -71,9 +71,59 @@ html[theme="light"] {
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
+    color: var(--text);
     
 }
 
-html[theme], body[theme] {
+html[theme] body {
     background-color: var(--bg);
 }
+
+html[theme] h1,
+html[theme] h2,
+html[theme] h3,
+html[theme] h4,
+html[theme] h5,
+html[theme] h6 {
+    color: var(--title);
+    text-shadow: 1px 2px 5px rgb(0, 0, 0);;
+}
+
+
+/* 02 General classes for all pages ------------------------------------------ */
+
+html[theme] .hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: var(--bs-text-color);
+}
+
+/* 🔵 Main Sections */
+html[theme] main section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 🔴 Footer */
+html[theme] .footer a {
+    color: var(--bs-text-color);
+    text-decoration: none;
+}
+
+html[theme] .footer a:hover {
+    text-decoration: underline;
+}
+
+/* 🟣 Buttons */
+html[theme] .btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+html[theme] .btn-primary:hover {
+    background-color: darken(var(--bs-primary), 10%);
+}
+
