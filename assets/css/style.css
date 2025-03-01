@@ -20,7 +20,7 @@ html[theme="dark"] {
     --bg: #2c3e50;
     --bg2: #415065;     /* still old one*/
 
-    --nav-bg: #2c3e50; 
+    --nav-bg: #121416; 
     
     --link-text-hover: #48C9B0; 
     --link-bg-hover: #00000000; 
@@ -48,7 +48,7 @@ html[theme="light"] {
     --bg: #d8d8d8;      /*or: ecf0f1*/
     --bg2: #d8d8d8;     /* still old */
 
-    --nav-bg: #2E3B4E;  /*or: 2c3e50*/
+    --nav-bg: #1d2125;  /*or: 2c3e50*/
     
     --link-text-hover: #1f917a;  /*or: 1abc9c */
     --link-bg-hover: #00000000; 
@@ -68,14 +68,20 @@ html[theme="light"] {
 
 
 /* 01 Generic STYLES that apply for all html pages --------------------------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html[theme] * {
     font-family: "Ubuntu", sans-serif;
     color: var(--text);
     box-sizing: border-box;
-    
+}
+
+html[theme] .fa,
+html[theme] .fas {
+    font-family: "Font Awesome 8 Free", "Font Awesome 7 Free", "Font Awesome 6 Free", "Font Awesome 5 Free";     /* that's important otherwise the icons won't be shown */
+    font-weight: 900;
+}
+
+html[theme] .fab {
+    font-family: "Font Awesome 8 Brands", "Font Awesome 7 Brands", "Font Awesome 6 Brands", "Font Awesome 5 Brands";
 }
 
 html[theme] body {
@@ -95,6 +101,10 @@ html[theme] h6 {
 html[theme] a {
     color: var(--link);
     text-decoration: none;
+}
+
+html[theme] .navbar {
+    background-color: var(--nav-bg);
 }
 
 
@@ -232,6 +242,12 @@ html[theme] .brand {
     color: #ecf0f1 ;
     margin-left: 10px;
 }
+
+html[theme] #language-toggle {
+    color: #ecf0f1;
+}
+
+
 
 /* MEDIA QUERIES ------------------------------------------------------------ */
 
