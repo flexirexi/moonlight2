@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentLang = "en";
     const themeToggle = document.getElementById("theme-toggle");
     const html = document.documentElement;
+    const themeIcon = themeToggle.querySelector("i");
 
     async function loadLanguage(lang) {
         document.documentElement.lang = lang;
@@ -36,15 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
     // Prüfen, ob ein gespeichertes Theme existiert
     const savedTheme = localStorage.getItem("theme") || "dark";
     html.setAttribute("theme", savedTheme);
-    themeToggle.textContent = savedTheme === "dark" ? "Light" : "Dark";
+    themeIcon.classList.add(savedTheme === "light" ? "fa-moon" : "fa-sun");
 
     // Event-Listener für den Theme-Switch
     themeToggle.addEventListener("click", () => {
         const newTheme = html.getAttribute("theme") === "dark" ? "light" : "dark";
         html.setAttribute("theme", newTheme);
         localStorage.setItem("theme", newTheme);
-        themeToggle.textContent = newTheme === "dark" ? "Light" : "Dark";
-    });
 
+        // Icon wechseln
+        themeIcon.classList.remove("fa-moon", "fa-sun");
+        themeIcon.classList.add(newTheme === "dark" ? "fa-sun": "fa-moon");
+    });
+    
     loadLanguage(currentLang);
 });
