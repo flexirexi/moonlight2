@@ -1,18 +1,22 @@
 {
-    "tHome":             "Home",
-    "tStudio":           "Studio",
-    "tTeam":             "TeamDEDEDE",
-    "tServices":         "Services",
-    "tLogoAltText":      "Logo-Bild",
-    "tLandingPageText":  "A\n modern studio\n in a great community",
-    
-    "tWelcomeSection":       "Willkommen bei Moonlight Studios",
-    "tWelcomeSectionText":   "Some text which gives a little impression of who we are. Who will feel the most comfortable at our studio and music center. We are a small but modern studio realizing our hobby, strengthening our profession with a diploma in audio engineering. We do not make a secret of bein new but educated and professional enough.\n\nMaybe some \"between the lines\" what music suites us the best and what musical life style is typical for us.\n\nSome indication of what we do and what client and guests can expect from us.",
-    "tOurProd":              "Our production",
-    "tOurProdText":          "We don't offer just recording, but also mixing, mastering and other production tasks - separately. You can unders our services as a modular system: you request a single task to finish your production or you request us to accompany your project as a whole.\n\nIt's up to you!",
-    "tWhatSoundLike":        "What we sound like",
-    "tWhatSoundLikeText":    "Just to show what we are capable of is essential for the first impression. So, here are some takes. We chose 2 very different productions on purpose.",
-    
-    "tBtnContactUs":         "contact us",
-    "tBtnTellMeMore":        "tell me more"
+  "tHome":             "Home",
+  "tStudio":           "Studio",
+  "tTeam":             "Über Uns",
+  "tServices":         "Anbebot",
+  "tLogoAltText":      "Logo-Bild",
+  "tLandingPageText":  "A\n modern studio\n in a great community", 
+  
+  "tWelcomeSection":      "Willkommen bei Moonlight Studios",
+  "tWelcomeSectionText":  "Wir sind ein modernes und digitales Musikstudio und helfen Dir bei der Produktion und Komposition Deiner Musik. Wenn du Vocals aufnehmen möchtest, einen Remake willst, deine Songs gemischt werden müssen oder einfach einen Songmaster brauchst, bist Du bei uns bestens aufgehoben. Wir führen das Studio zu zweit und bilden uns koninuierlich weiter, besonders im Bereich der digitalen Produktion. Das macht uns flexibel und unser Angebot kostengünstig.",
+  "tWelcomeSectionBtn":   "Über uns",
+
+  "tOurServices":         "Unser Angebot",
+  "tOurServicesText":     "Im Grunde decken wir 2 Themenfelder ab: Digitale Produktion und Songwriting/Komposition.<br><br> Die digitale Produktion ist das Handwerk heutiger Musik. Sag uns einfach in welchem Schritt der Produktion Du unsere Hilfe brauchst und wir ergänzen. Selbstverständlich begleiten wir Dich auch durch die gesamte Produktion Deiner Musik. Das Themenfeld des Songwriting bzw. der Komposition ist die Kunst unseres Angebots. Das kann Gebrauchsmusik, wie beispielsweise für Film und Werbung sein, aber auch Populärmusik, wie Rock, Pop oder EDM. Nimm dir ein paar Minuten Zeit und schildere uns dein Projekt. Dann entscheiden wir individuell, ob und wie wir es angehen können!",
+  "tOurServicesBtn":      "Zum Angebot",
+
+  "tWhatSoundLike":        "What we sound like",
+  "tWhatSoundLikeText":    "Just to show what we are capable of is essential for the first impression. So, here are some takes. We chose 2 very different productions on purpose.",
+  
+  "tBtnContactUs":         "contact us",
+  "tBtnTellMeMore":        "tell me more"
   }

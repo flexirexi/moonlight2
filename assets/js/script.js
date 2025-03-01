@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
             document.querySelectorAll("[class]").forEach(el => {
                 const key = el.classList[0];
-                if (texts[key]) el.textContent = texts[key];
+                if (texts[key]) el.innerHTML = texts[key];
             });
         } catch (error) {
             console.error("Fehler beim Laden oder Parsen der JSON:", error);
