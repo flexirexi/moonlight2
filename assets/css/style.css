@@ -110,13 +110,64 @@ html[theme] .navbar {
 
 /* 02 General classes for all pages ------------------------------------------ */
 html[theme] .hero {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
     background-color: transparent;
     color: var(--bs-text-color);
 }
+
+/* Headline Positionierung */
+html[theme] .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 90%;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+html[theme] .hero-text .small {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+html[theme] .hero-text .xxl {
+    font-size: clamp(1.75rem, 8vw, 4.5rem);
+}
+
+html[theme] .hero-text .line {
+    display: block;
+}
+
+html[theme] .hero-text .gap {
+    word-spacing: 20px;
+}
+
+html[theme] .hero-text .text-start {
+    margin-left: 5%;
+}
+
+/* Dynamische Verschiebung basierend auf Seitenverhältnis */
+@media (min-aspect-ratio: 16/9) {
+    html[theme] .hero-text {
+        top: 45%; /* Höher platzieren, wenn breiter als 16:9 */
+    }
+}
+
+@media (max-aspect-ratio: 4/3) {
+    html[theme] .hero-text {
+        top: 55%; /* Etwas niedriger setzen, wenn fast quadratisch */
+    }
+}
+
+
+
 
 html[theme] nav a {
     margin: 0 6px;
@@ -155,6 +206,7 @@ html[theme] #navbarNav ul li {
 /* Alle Bilder übereinander stapeln */
 .slideshow img {
     position: absolute;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
