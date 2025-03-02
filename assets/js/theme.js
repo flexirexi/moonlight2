@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const themeToggle = document.getElementById("theme-toggle");
     const themeIcon = themeToggle.querySelector("i");
+    const html = document.documentElement;
 
     // Prüfen, ob ein gespeichertes Theme existiert
     const savedTheme = localStorage.getItem("theme") || "dark";
