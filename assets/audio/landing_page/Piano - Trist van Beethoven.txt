@@ -1,7 +1,7 @@
 Piano - Trist van Beethoven
 A short sequence using triplets in a minor key—clearly inspired by Beethoven. This passage demonstrates that even in digital production, 
 we fully utilize dynamics (velocity) and legato. Please understand that we are not presenting fully composed sonatas here.
-
+<br><br>
 Eine kurze Sequenz, die Triolen in Moll verwendet – eindeutig von Beethoven inspiriert. 
 Diese Passage zeigt, dass wir auch in digitaler Produktion Dynamik (Velocity) und Legato gezielt einsetzen. 
 Bitte habt Verständnis, dass wir hier keine vollständig komponierten Sonaten präsentieren.
