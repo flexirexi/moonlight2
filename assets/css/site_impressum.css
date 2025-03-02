@@ -1,6 +1,6 @@
 html[theme] .impressum-container {
     max-width: 1200px;
-    margin: 60px auto;
+    margin: 50px auto;
     padding: 30px;
 }
 
@@ -22,6 +22,10 @@ html[theme] .impressum-right {
 
 /* Ab 768px: Zwei-Spalten-Layout */
 @media (min-width: 768px) {
+    html[theme] .impressum-container {
+        padding: 50px;
+    }
+
     html[theme] .impressum-grid {
         grid-template-columns: 1fr 1fr;
     }
