@@ -87,7 +87,7 @@ async function loadAudioList() {
                 <h6 style="margin-top: 25px;">${title.trim()}</h6>
                 <details>
                     <summary style="margin-bottom: 5px;">Details</summary>
-                    <p style="color: #b1b1b1; font-size: 0.9rem;"> ${detailsText}</p>
+                    <p style="color:rgb(144, 144, 144); font-size: 0.9rem;"> ${detailsText}</p>
                 </details>
                 <audio controls style="width: 90%; max-width: 900px;">
                     <source src="${audioFile}" type="audio/mpeg">
