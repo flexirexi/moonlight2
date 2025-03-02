@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const html = document.documentElement;
     const themeIcon = themeToggle.querySelector("i");
 
+
     async function loadLanguage(lang) {
         document.documentElement.lang = lang;
         console.log(`Sprache wechseln zu: ${lang}`);
@@ -51,4 +52,50 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
     loadLanguage(currentLang);
+    loadAudioList();
 });
+
+async function loadAudioList() {
+    const audioContainer = document.getElementById("audio-list"); 
+    const audioPath = "assets/audio/landing_page/"; 
+    try {
+        // Lade die Datei-Liste (serverseitig bereitstellen oder manuell anlegen)
+        const response = await fetch(`${audioPath}file-list.json`);
+        const fileList = await response.json(); // Erwartet ein Array mit Dateinamen (ohne Endung)
+
+        for (const file of fileList) {
+            const txtFile = `${audioPath}${file}.txt`;
+            const audioFile = `${audioPath}${file}.mp3`;
+
+            // Prüfe, ob die TXT-Datei existiert
+            const txtResponse = await fetch(txtFile);
+            if (!txtResponse.ok) continue; // Falls TXT fehlt, überspringen
+
+            const txtContent = await txtResponse.text(); // Inhalt der TXT-Datei lesen
+            const [title, ...detailsArray] = txtContent.split("\n"); // Erste Zeile = Titel, Rest = Details
+            const detailsText = detailsArray.join(" ").trim() || "Keine Beschreibung verfügbar.";
+
+            // Prüfe, ob das Audiofile existiert
+            const audioResponse = await fetch(audioFile, { method: "HEAD" });
+            if (!audioResponse.ok) continue; // Falls MP3 fehlt, überspringen
+
+            // Erstelle das HTML für das Audio-Element
+            const audioElement = document.createElement("article");
+            audioElement.classList.add("audio-item");
+            audioElement.innerHTML = `
+                <h3>${title.trim()}</h3>
+                <details>
+                    <summary>Details</summary>
+                    <p>${detailsText}</p>
+                </details>
+                <audio controls>
+                    <source src="${audioFile}" type="audio/mpeg">
+                    Dein Browser unterstützt das Audio-Element nicht.
+                </audio>
+            `;
+            audioContainer.appendChild(audioElement);
+        }
+    } catch (error) {
+        console.error("Fehler beim Laden der Audio-Dateien:", error);
+    }
+}
