@@ -169,9 +169,6 @@ html[theme] .hero-text .text-start {
     }
 }
 
-
-
-
 html[theme] nav a {
     margin: 0 6px;
     font-size: 1.2rem;
@@ -247,6 +244,7 @@ html[theme] #navbarNav ul li {
 html[theme] main section {
     max-width: 800px;
     margin: 0 auto;
+    margin-top: 70px;
 }
 
 html[theme] .mb-2 a:hover {
@@ -298,6 +296,8 @@ html[theme] .btn-primary:hover {
     border-color: var(--act-border-hover);
     background-color: var(--act-bg-hover);
 }
+
+
 
 /* 03 specific elements ----------------------------------------------------- */
 html[theme] .brand {

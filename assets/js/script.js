@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         themeIcon.classList.add(newTheme === "dark" ? "fa-sun": "fa-moon");
     });
     
+    
     loadLanguage(currentLang);
     loadAudioList();
 });
