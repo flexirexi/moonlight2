@@ -83,12 +83,12 @@ async function loadAudioList() {
             const audioElement = document.createElement("article");
             audioElement.classList.add("audio-item");
             audioElement.innerHTML = `
-                <h3>${title.trim()}</h3>
+                <h6 style="margin-top: 55px;">${title.trim()}</h6>
                 <details>
                     <summary>Details</summary>
-                    <p>${detailsText}</p>
+                    <p style="color: #b1b1b1; font-size: 0.9rem;"> ${detailsText}</p>
                 </details>
-                <audio controls>
+                <audio controls style="width: 90%; max-width: 900px;">
                     <source src="${audioFile}" type="audio/mpeg">
                     Dein Browser unterstützt das Audio-Element nicht.
                 </audio>
