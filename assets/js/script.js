@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
     
-    loadLanguage(currentLang);
+    loadLanguage("en");
     loadAudioList();
 });
 
@@ -84,9 +84,9 @@ async function loadAudioList() {
             const audioElement = document.createElement("article");
             audioElement.classList.add("audio-item");
             audioElement.innerHTML = `
-                <h6 style="margin-top: 55px;">${title.trim()}</h6>
+                <h6 style="margin-top: 25px;">${title.trim()}</h6>
                 <details>
-                    <summary>Details</summary>
+                    <summary style="margin-bottom: 5px;">Details</summary>
                     <p style="color: #b1b1b1; font-size: 0.9rem;"> ${detailsText}</p>
                 </details>
                 <audio controls style="width: 90%; max-width: 900px;">

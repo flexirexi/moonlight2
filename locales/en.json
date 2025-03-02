@@ -4,16 +4,21 @@
     "tTeam":             "About us",
     "tServices":         "Services",
     "tLogoAltText":      "Logo",
-    "tLandingPageText":  "A\n modern studio\n in a great community",
+    "tLandingPageText":  "A\n modern studio\n in a great community", 
     
-    "tWelcomeSection":       "Welcome to moonlight studios",
-    "tWelcomeSectionText":   "Some text which gives a little impression of who we are. Who will feel the most comfortable at our studio and music center. We are a small but modern studio realizing our hobby, strengthening our profession with a diploma in audio engineering. We do not make a secret of bein new but educated and professional enough.\n\nMaybe some \"between the lines\" what music suites us the best and what musical life style is typical for us.\n\nSome indication of what we do and what client and guests can expect from us.",
-    "tOurProd":              "Our production",
-    "tOurProdText":          "We don't offer just recording, but also mixing, mastering and other production tasks - separately. You can unders our services as a modular system: you request a single task to finish your production or you request us to accompany your project as a whole.\n\nIt's up to you!",
+    "tWelcomeSection":      "Welcome to Moonlight Studios",
+    "tWelcomeSectionText":  "We are a modern, digital music studio, dedicated to helping you with the production and composition of your music. Whether you want to record vocals, plan a remake, need your songs mixed, or simply require a song master – you’re in the right place with us. We run the studio as a duo and continuously expand our expertise, especially in digital production. This makes us flexible and keeps our services cost-effective.",
+    "tWelcomeSectionBtn":   "About us",
+  
+    "tOurServices":         "Our Services",
+    "tOurServicesText":     "Essentially, we cover two main areas: digital production and songwriting/composition. <br><br>Digital production is the craftsmanship behind modern music. Just let us know at which stage of the production process you need our assistance, and we’ll complement your work accordingly. Of course, we can also guide you through the entire production of your music.<br><br>Songwriting and composition, on the other hand, represent the artistic side of our services. This includes production music for film and advertising, as well as popular music genres like rock, pop, or EDM. Take a few minutes to tell us about your project, and we’ll determine individually how we can approach it together!",
+    "tOurServicesBtn":      "To Services",
+  
     "tWhatSoundLike":        "What we sound like",
-    "tWhatSoundLikeText":    "Just to show what we are capable of is essential for the first impression. So, here are some takes. We chose 2 very different productions on purpose.",
-    
-    "tBtnContactUs":         "contact us",
-    "tBtnTellMeMore":        "tell me more"
+    "tWhatSoundLikeText":    "It is essential to make a strong first impression by showcasing what we can do. That’s why we have listed a selection of takes below. We have deliberately explored a wide range of genres and styles. The selection includes both original compositions and productions in popular music.", 
+  
+    "tContact":              "Contact",
+    "tContactText":          "Let’s talk about your next music project. Click on Contact and fill the form quickly.",
+    "tConactBtn":            "Contact us"
 
 }

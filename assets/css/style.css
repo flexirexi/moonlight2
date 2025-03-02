@@ -244,7 +244,11 @@ html[theme] #navbarNav ul li {
 html[theme] main section {
     max-width: 800px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 10px;
+}
+
+html[theme] main section * {
+    margin-bottom: 20px;
 }
 
 html[theme] .mb-2 a:hover {
