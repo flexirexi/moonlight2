@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     langToggle.addEventListener("click", () => {
+        //INFO: click event is also triggered in script.js to close navbar, this is a different context
         currentLang = currentLang === "en" ? "de" : "en";
         langToggle.textContent = currentLang === "en" ? "DE" : "EN";
         loadLanguage(currentLang);

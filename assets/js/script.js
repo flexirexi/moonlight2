@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const themeToggle = document.getElementById("theme-toggle");
+    const langToggle = document.getElementById("language-toggle");
     const html = document.documentElement;
     const themeIcon = themeToggle.querySelector("i");
     const navbarToggler = document.querySelector(".navbar-toggler");
