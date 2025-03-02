@@ -13,6 +13,7 @@ Bootstrap is used here -> in order to overwrite, use:
 /* 01 General Parameters ------------------------------------- */
 html[theme="dark"] {
     --text: #ecf0f1;
+    --text2: #d7d7d7;
     --accent: #e67e22;
     --title: #ecf0f1;   /*or: 1abc9c*/
     --title-shadow: #000000;
@@ -211,7 +212,7 @@ html[theme] #navbarNav ul li {
     height: 100%;
     object-fit: cover;
     opacity: 0;
-    filter: brightness(37%);
+    filter: brightness(42%);
 }
 
 /* Animations-Delay für die einzelnen Bilder */
@@ -305,16 +306,29 @@ html[theme] .btn-primary:hover {
 
 /* 03 specific elements ----------------------------------------------------- */
 html[theme] .brand {
-    color: #ecf0f1 ;
     margin-left: 10px;
 }
 
 html[theme] #language-toggle {
-    color: #ecf0f1;
+    margin-top: 10px;
+    margin-left: 20px;
+    min-width: 55px;
+}
+
+html[theme] #theme-toggle {
+    margin-top: 10px;
+    margin-left: 20px;
+    min-width: 45px;
 }
 
 
 
 /* MEDIA QUERIES ------------------------------------------------------------ */
-
+@media (min-width: 768px) {
+    html[theme] #language-toggle,
+    html[theme] #theme-toggle {
+        margin-top: unset;
+        margin-left: unset;
+    }
+}
 

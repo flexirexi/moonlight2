@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     let currentLang = "en";
     const themeToggle = document.getElementById("theme-toggle");
+    const langToggle = document.getElementById("language-toggle");
     const html = document.documentElement;
     const themeIcon = themeToggle.querySelector("i");
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
 
 
     async function loadLanguage(lang) {
@@ -28,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    document.getElementById("language-toggle").addEventListener("click", () => {
+    langToggle.addEventListener("click", () => {
         let oldLang = currentLang;
         currentLang = currentLang === "en" ? "de" : "en";
         document.getElementById("language-toggle").textContent = oldLang.toUpperCase();
@@ -50,11 +53,20 @@ document.addEventListener("DOMContentLoaded", () => {
         themeIcon.classList.remove("fa-moon", "fa-sun");
         themeIcon.classList.add(newTheme === "dark" ? "fa-sun": "fa-moon");
     });
-    
-    
+
+    function closeNavbar() {
+        if (navbarCollapse.classList.contains("show")) {
+            navbarToggler.click(); // Simuliert den Klick zum Schließen der Navbar
+        }
+    }
+
     loadLanguage("en");
     loadAudioList();
+    // Event-Listener für die Buttons, um die Navbar zu schließen
+    themeToggle.addEventListener("click", closeNavbar);
+    langToggle.addEventListener("click", closeNavbar);
 });
+
 
 async function loadAudioList() {
     const audioContainer = document.getElementById("audio-list"); 
