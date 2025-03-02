@@ -1,0 +1,22 @@
+.impressum-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.impressum-grid {
+    display: grid;
+    grid-template-columns: 1fr;  /* Standard: Eine Spalte für mobile Ansicht */
+    gap: 20px;
+}
+
+.impressum-left, .impressum-right {
+    text-align: left;
+}
+
+/* Ab 768px: Zwei-Spalten-Layout */
+@media (min-width: 768px) {
+    .impressum-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
