@@ -10,6 +10,7 @@ Bootstrap is used here -> in order to overwrite, use:
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700');
 @import url("themes.css");
 @import url("site_impressum.css");
+@import url("site_services.css");
 
 
 /* 01 Generic STYLES that apply for all html pages --------------------------- */

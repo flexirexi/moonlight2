@@ -19,6 +19,47 @@
   
     "tContact":              "Contact",
     "tContactText":          "Let’s talk about your next music project. Click on 'Contact us' and fill the form quickly.",
-    "tContactBtn":            "Contact us"
+    "tContactBtn":            "Contact us",
+
+    "tRecordingTitle": "RECORDING",
+    "tRecordingText": "High-quality recordings for vocals and instruments in professional studio quality.",
+
+    "tVoiceRecording": "Voice Recording",
+    "tVoiceRecordingText": "Recordings for singers, speakers & artists with high-end equipment.",
+
+    "tInstrumentRecording": "Instrument Recording",
+    "tInstrumentRecordingText": "Instrumental recordings for bands, solo artists, and orchestral musicians.",
+
+    "tVoiceover": "Voiceover",
+    "tVoiceoverText": "Professional voice recordings for podcasts, audiobooks & commercials.",
+
+    "tProductionTitle": "PRODUCTION",
+    "tProductionText": "Mixing, mastering & music production for your unique sound.",
+
+    "tMixing": "Mixing",
+    "tMixingText": "Professional mixing for the perfect sound of your song.",
+
+    "tMastering": "Mastering",
+    "tMasteringText": "Finishing touch for your music with state-of-the-art mastering techniques.",
+
+    "tRemakes": "Remakes",
+    "tRemakesText": "Reinterpretations & adjustments of existing music productions.",
+
+    "tCompositionTitle": "COMPOSITION",
+    "tCompositionText": "Custom music composition for film, advertising, and artists.",
+
+    "tAppliedMusic": "Applied Music",
+    "tAppliedMusicText": "Music for films, commercials, and events, tailored to your needs.",
+
+    "tInstrumentalPieces": "Instrumental Pieces",
+    "tInstrumentalPiecesText": "Instrumental music for various genres – from classical to modern.",
+
+    "tSongSequences": "Sequences for Your Songs",
+    "tSongSequencesText": "Custom music sequences for your project – from melodies to sound effects.",
+
+    "tOtherTitle": "OTHER",
+    "tOtherText": "Do you have a special idea for a project? Contact us!",
+    
+    "tMore": "More..."
 
 }

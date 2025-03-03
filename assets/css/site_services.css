@@ -1,0 +1,103 @@
+/* IMPORT AUS MAIN.CSS ERFOLGT DORT, DAMIT DIE VARIABLEN VERFÜGBAR SIND */
+
+/* Hauptcontainer mit max-width */
+html[theme] body.services main.container {
+    max-width: 1900px;
+    
+}
+
+/* HERO SECTION */
+html[theme] body.services .hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+}
+
+/* Overlay für bessere Lesbarkeit */
+html[theme] body.services .hero .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 100%;
+}
+
+/* Überschrift im Hero */
+html[theme] body.services .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Beschreibung im Hero */
+html[theme] body.services .hero p {
+    font-size: 1rem;
+}
+
+/* GRID FÜR SERVICE CARDS */
+html[theme] .service-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+/* STYLING DER SERVICE CARDS */
+html[theme] .service-card {
+    background-color: var(--bg2);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+html[theme] .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* STYLING DES LINKS "MEHR..." */
+html[theme] .service-card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--link);
+    text-decoration: none;
+}
+
+html[theme] .service-card a:hover {
+    text-decoration: underline;
+}
+
+/* MEDIA QUERY: Anpassungen für größere Screens */
+@media (min-width: 768px) {
+    html[theme] body.services main.container {
+        padding: 0px;
+    }
+    
+    html[theme] body.services .hero {
+        height: 400px;
+    }
+    
+    html[theme] body.services .hero .overlay {
+        width: 100%;
+    }
+    
+    html[theme] .service-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 60px;
+    }
+    
+    html[theme] body.services .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    html[theme] body.services .hero p {
+        font-size: 1.2rem;
+    }
+}

@@ -21,5 +21,46 @@
   "tContactText":          "Stelle uns gern Dein nächstes Projekt vor. Klicke unten auf 'Kontaktiere uns' und fülle kurz das Formular aus.",
   "tContactBtn":            "Kontaktiere uns",
   
-  "tBtnTellMeMore":        "tell me more"
+  "tBtnTellMeMore":        "tell me more",
+
+  "tRecordingTitle": "RECORDING",
+  "tRecordingText": "Hochwertige Aufnahmen für Gesang und Instrumente in professioneller Studioqualität.",
+
+  "tVoiceRecording": "Voice Recording",
+  "tVoiceRecordingText": "Aufnahmen für Sänger, Sprecher & Künstler mit High-End Equipment.",
+
+  "tInstrumentRecording": "Instrument Recording",
+  "tInstrumentRecordingText": "Instrumentale Aufnahmen für Bands, Solo-Künstler und Orchestermusiker.",
+
+  "tVoiceover": "Voiceover",
+  "tVoiceoverText": "Professionelle Sprachaufnahmen für Podcasts, Hörbücher & Werbung.",
+
+  "tProductionTitle": "PRODUCTION",
+  "tProductionText": "Mixing, Mastering & Musikproduktion für deinen einzigartigen Sound.",
+
+  "tMixing": "Mixing",
+  "tMixingText": "Professionelles Mixing für den perfekten Klang deines Songs.",
+
+  "tMastering": "Mastering",
+  "tMasteringText": "Feinschliff für deine Musik mit modernster Mastering-Technik.",
+
+  "tRemakes": "Remakes",
+  "tRemakesText": "Neuinterpretationen & Anpassungen bestehender Musikproduktionen.",
+
+  "tCompositionTitle": "KOMPOSITION",
+  "tCompositionText": "Individuelle Musikkomposition für Film, Werbung und Künstler.",
+
+  "tAppliedMusic": "Gebrauchsmusik",
+  "tAppliedMusicText": "Musik für Filme, Werbespots und Events, maßgeschneidert auf deine Bedürfnisse.",
+
+  "tInstrumentalPieces": "Instrumentale Stücke",
+  "tInstrumentalPiecesText": "Instrumentalmusik für diverse Genres – von Klassik bis Modern.",
+
+  "tSongSequences": "Sequenzen für deine Songs",
+  "tSongSequencesText": "Individuelle Musiksequenzen für dein Projekt – von Melodien bis Soundeffekten.",
+
+  "tOtherTitle": "OTHER",
+  "tOtherText": "Du hast eine spezielle Idee für ein Projekt? Kontaktiere uns!",
+  
+  "tMore": "Mehr..."
   }
