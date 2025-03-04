@@ -2,27 +2,35 @@
 
 /* Hauptcontainer mit max-width */
 html[theme] body.services main.container {
+    width: 102%;
     max-width: 1900px;
-    margin-top: 50px;
+    padding: 0;
+    margin-top: 55px;
     
+}
+
+html[theme] body.services .service-section {
+    margin: 0px auto;
 }
 
 /* HERO SECTION */
 html[theme] body.services .hero {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 /* Overlay für bessere Lesbarkeit */
 html[theme] body.services .hero .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
     padding: 25px 15px;
@@ -32,21 +40,29 @@ html[theme] body.services .hero .overlay {
 html[theme] body.services .hero h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px black;
+    color: #fff;
 }
 
 /* Beschreibung im Hero */
 html[theme] body.services .hero p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    color: #ecf0f1;
 }
 
 /* GRID FÜR SERVICE CARDS */
 html[theme] .service-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 35px;
     justify-content: center;
     padding: 50px 30px;
     background-color: #00000020;
+    margin-bottom: 0px;
+}
+
+html[theme="light"] .service-grid {
+    background-color: #415065e0;
 }
 
 /* STYLING DER SERVICE CARDS */
@@ -54,15 +70,15 @@ html[theme] .service-card {
     background-color: var(--bg2);
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     max-width: 500px;
     margin: 0 auto;
 }
 
 html[theme] .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
 }
 
 /* STYLING DES LINKS "MEHR..." */
@@ -85,6 +101,7 @@ html[theme] .service-card a:hover {
     }
     
     html[theme] body.services .hero {
+
     }
 
     html[theme] body.services .service-card {
@@ -97,6 +114,7 @@ html[theme] .service-card a:hover {
     
     html[theme] .service-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 50px 50px;
     }
     
     html[theme] body.services .hero h2 {
