@@ -78,10 +78,10 @@ details[open] summary::after {
 }
 
 html[theme="light"] footer {
-    background-color: var(--bg);
+    background-color: var(--bg2);
 }
 
-html[theme="dark"] footer {
+html[theme="dark"] .footer {
     background-color: var(--nav-bg);
 }
 
@@ -258,9 +258,14 @@ html[theme] .footer .mb-3 {
     min-height: 60px;
 }
 
+html[theme] .mb-0 {
+    color: var(--text2);
+}
+
 html[theme] .mb-2 {
     min-height: 60px;
     justify-content: center;
+    padding-top: 5px;
 }
 
 /* Icons zentrieren */

@@ -5,6 +5,10 @@ html[theme] body.services {
     background-color: var(--bg);
 }
 
+html[theme="light"] body.services {
+    background-color: white;
+}
+
 html[theme] body.services main.container {
     width: 100%;
     padding: 0;
@@ -70,7 +74,7 @@ html[theme] .service-grid {
 }
 
 html[theme="light"] .service-grid {
-    background-color: #ebebeb;
+    background-color: #d8d8d8;
 }
 
 /* STYLING DER SERVICE CARDS */
@@ -78,20 +82,21 @@ html[theme] .service-card {
     background-color: var(--bg2);
     padding: 20px;
     border-radius: 3px;
-    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     max-width: 400px;
     margin: 0 auto;
 }
 
-
+html[theme="light"] .service-card {
+    background-color: #f2f2f2;
+}
 
 html[theme] .service-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 13px rgba(0, 0, 0, 0.4);
 }
 
-/* STYLING DES LINKS "MEHR..." */
 html[theme] .service-card a {
     display: inline-block;
     margin-top: 10px;
