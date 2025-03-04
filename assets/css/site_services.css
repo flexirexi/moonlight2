@@ -2,7 +2,7 @@
 
 /* Hauptcontainer mit max-width */
 html[theme] body.services main.container {
-    width: 102%;
+    width: 100%;
     max-width: 1900px;
     padding: 0;
     margin-top: 55px;
