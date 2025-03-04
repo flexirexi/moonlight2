@@ -1,8 +1,8 @@
 /* IMPORT AUS MAIN.CSS ERFOLGT DORT, DAMIT DIE VARIABLEN VERFÜGBAR SIND */
 
 /* Hauptcontainer mit max-width */
-html[theme="light"] body.services {
-    background-color: white;
+html[theme] body.services {
+    background-color: var(--bg);
 }
 
 html[theme] body.services main.container {
@@ -77,8 +77,8 @@ html[theme="light"] .service-grid {
 html[theme] .service-card {
     background-color: var(--bg2);
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.35);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     max-width: 400px;
     margin: 0 auto;
@@ -88,7 +88,7 @@ html[theme] .service-card {
 
 html[theme] .service-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 13px rgba(0, 0, 0, 0.4);
 }
 
 /* STYLING DES LINKS "MEHR..." */
