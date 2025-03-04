@@ -1,0 +1,44 @@
+/* IMPORT AUS MAIN.CSS ERFOLGT DORT, DAMIT DIE VARIABLEN VERFÜGBAR SIND */
+
+/* Hauptcontainer mit max-width */
+html[theme] body.studio {
+    background-color: var(--bg);
+}
+
+html[theme="light"] body.studio {
+    background-color: white;
+}
+
+html[theme] body.studio main.container {
+    width: 100%;
+    padding: 0;
+    margin-top: 55px;
+}
+
+html[theme] body.studio section {
+    margin: 0px auto;
+    max-width: 950px;
+}
+ 
+html[theme] .studio-section {
+    padding: 20px 30px;
+}
+
+html[theme] .studio-section h2 {
+    margin-top: 20px;
+}
+
+html[theme] body.studio .gallery {
+    margin-top: 60px;
+}
+
+
+/* MEDIA QUERY: Anpassungen für größere Screens */
+@media (min-width: 768px) {
+    html[theme] body.studio main.container {
+        padding: 0px;
+    }
+
+    
+
+}

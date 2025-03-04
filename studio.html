@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body>
+<body class="studio">
     <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
@@ -42,46 +42,58 @@
         </div>
     </nav>
     
-    <header class="hero">
-        <div class="slideshow">
-            <img src="assets/img/site_landing_page/00_studio_2025_02.jpg" class="slide" alt="Image 1: studio">
-            <img src="assets/img/site_landing_page/studio_2025_01.jpg" class="slide" alt="Image 2: studio">
-            <img src="assets/img/site_landing_page/musikerzentrum_2025_01.jpg" class="slide" alt="Image 3: Musikzentrum">
-            <img src="assets/img/site_landing_page/studio_2025_03.jpg" class="slide" alt="Image 4: studio">
-            <img src="assets/img/site_landing_page/studio_2025_08.jpg" class="slide" alt="Image 5: studio">
-            <img src="assets/img/site_landing_page/studio_2025_09.jpg" class="slide" alt="Image 5: studio">
-        </div>
-        <!-- Headline über den Bildern -->
-        <div class="hero-text">
-            <span data-lang="tHeader11" class="small">A</span>
-            <span data-lang="tHeader21" class="xxl line">modern studio</span>
-            <span data-lang="tHeader31" class="small line text-start">in <span data-lang="tHeader32" class="gap">a </span><span data-lang="tHeader33" class="xxl">great community</span></span>
-        </div>
-    </header>
-
-    <main class="container text-center my-5">
-        <section id="about" class="py-5">
-            <h1 data-lang="tWelcomeSection">Welcome to Moonlight Studios</h1>
-            <p data-lang="tWelcomeSectionText">Professional music production with passion</p>
-            <a href="#about" data-lang="tWelcomeSectionBtn" class="btn btn-primary learn-more-btn">Learn More</a>
-        </section>
-        <section id="services" class="py-5">
-            <h3 data-lang="tOurServices" >Our Services</h3>
-            <p data-lang="tOurServicesText">High-end music production tailored to your needs.</p>
-            <a href="#" data-lang="tOurServicesBtn" class="btn btn-primary">See Services</a>
-        </section>
-        <section id="whatSoundLike" class="py-5">
-            <h3 data-lang="tWhatSoundLike">What we sound like</h3>
-            <p data-lang="tWhatSoundLikeText">Explore the music we’ve created.</p>
-            <div id="audio-list">
+    <main class="container">
+        <!-- Unser Studio Abschnitt -->
+        <section class="studio-section">
+            <h2>Unser Studio</h2>
+            <p>
+                Unser Studio ist neu, digital und modern. Wir arbeiten mit hochwertigen VST-Plugins und nutzen 
+                Software wie Kontakt, Izotope, Serum und Reaktor. Unsere Hardware ist auf dem neuesten Stand,
+                was schnelle und effiziente Produktionsprozesse ermöglicht. Neben einer Gesangskabine verfügen
+                wir über ein MIDI-Keyboard mit Hammermechanik, Gitarren und Bass. Weitere Erweiterungen sind geplant!
+                Zudem bilden wir uns kontinuierlich im Bereich Audio Engineering weiter, um stets beste Qualität zu liefern.
+            </p>
+            <div class="gallery">
+                <img src="assets/img/studio/studio1.jpg" alt="Studio Bild 1">
+                <img src="assets/img/studio/studio2.jpg" alt="Studio Bild 2">
+                <img src="assets/img/studio/studio3.jpg" alt="Studio Bild 3">
+                <img src="assets/img/studio/studio4.jpg" alt="Studio Bild 4">
+                <img src="assets/img/studio/studio5.jpg" alt="Studio Bild 5">
             </div>
         </section>
-        <section id="contact" class="py-5">
-            <h3 data-lang="tContact">Contact Us</h3>
-            <p data-lang="tContactText">Let’s talk about your next music project.</p>
-            <a href="#" data-lang="tContactBtn" class="btn btn-primary">Get in Touch</a>
+    
+        <!-- Musikerzentrum Abschnitt -->
+        <section class="studio-section">
+            <h2>Das Musikerzentrum</h2>
+            <p>
+                Unser Studio befindet sich im Musikerzentrum Rodgau, einer kreativen Umgebung für Musiker aller Genres. 
+                Hier gibt es zahlreiche Proberäume, Musiklehrer und Bands, die in einer inspirierenden Atmosphäre arbeiten. 
+                Das Zentrum ist bequem mit der S-Bahn S1 erreichbar (Haltestelle Rodgau-Weißkirchen). 
+                Zudem gibt es eine Cafeteria und selbstverständlich sanitäre Anlagen für alle Besucher.
+            </p>
+            <div class="gallery">
+                <img src="assets/img/musikerzentrum/mz1.jpg" alt="Musikerzentrum Bild 1">
+                <img src="assets/img/musikerzentrum/mz2.jpg" alt="Musikerzentrum Bild 2">
+                <img src="assets/img/musikerzentrum/mz3.jpg" alt="Musikerzentrum Bild 3">
+                <img src="assets/img/musikerzentrum/mz4.jpg" alt="Musikerzentrum Bild 4">
+                <img src="assets/img/musikerzentrum/mz5.jpg" alt="Musikerzentrum Bild 5">
+            </div>
+            
+            <!-- Google Maps Integration -->
+            <div class="map-container">
+                <iframe 
+                    width="100%" 
+                    height="300" 
+                    frameborder="0" 
+                    style="border:0" 
+                    allowfullscreen 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?q=Udenhoutstra%C3%9Fe+2a+Rodgau&key=YOUR_API_KEY">
+                </iframe>
+            </div>
         </section>
     </main>
+    
 
     <!-- Footer -->
     <footer class="footer text-center py-4">
