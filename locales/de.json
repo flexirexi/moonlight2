@@ -62,5 +62,14 @@
   "tOtherTitle": "OTHER",
   "tOtherText": "Du hast eine spezielle Idee für ein Projekt? Kontaktiere uns!",
   
-  "tMore": "Mehr..."
-  }
+  "tMore": "Mehr...",
+
+
+  "tOurStudio": "Unser Studio",
+  "tOurStudioText": "<br>Unser Studio ist neu, digital und modern. Wir arbeiten mit hochwertigen VST-Plugins und nutzen Software wie Kontakt, Izotope, Serum und Reaktor. Unsere Hardware ist auf dem neuesten Stand, was schnelle und effiziente Produktionsprozesse ermöglicht. Neben einer Gesangskabine verfügen wir über ein MIDI-Keyboard mit Hammermechanik, Gitarren und Bass. Weitere Erweiterungen sind geplant! Zudem bilden wir uns kontinuierlich im Bereich Audio Engineering weiter, um stets beste Qualität zu liefern.",
+
+  "tOurZentrum": "Das Musikerzentrum Rodgau",
+  "tOurZentrumText": "<br>Unser Studio befindet sich im Musikerzentrum Rodgau, einer kreativen Umgebung für Musiker aller Genres. Hier gibt es zahlreiche Proberäume, Musiklehrer und Bands, die in einer inspirierenden Atmosphäre arbeiten. Das Zentrum ist mit der S-Bahn S1 erreichbar (Haltestelle Rodgau-Weißkirchen). Zudem gibt es eine Cafeteria und selbstverständlich sanitäre Anlagen für alle Besucher."
+
+
+}

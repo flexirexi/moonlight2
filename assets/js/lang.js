@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Nur Elemente mit `data-lang` aktualisieren (verhindert ungewollte Änderungen)
             document.querySelectorAll("[data-lang]").forEach(el => {
                 const key = el.dataset.lang; // Holt den Key aus data-lang
-                if (texts[key]) el.textContent = texts[key];
+                if (texts[key]) el.innerHTML = texts[key];
             });
 
             // Sprache in localStorage speichern, damit sie beim Neuladen erhalten bleibt
