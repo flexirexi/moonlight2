@@ -55,7 +55,7 @@ html[theme] body.studio .gallery {
 .gallery img {
     object-fit: cover;
     border-radius: 0px;
-    max-height: 250px;
+    max-height: unset;
     max-width: 100%;
     margin: 0 0;
 }
@@ -75,6 +75,10 @@ html[theme] body.studio main section * {
 @media (min-width: 768px) {
     html[theme] body.studio main.container {
         padding: 0px;
+    }
+
+    .gallery img {
+        max-height: 250px;
     }
 
     
