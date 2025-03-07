@@ -50,6 +50,7 @@ html[theme] body.studio .gallery {
     justify-content: center;
     gap: 0;
     width: 100%;
+
 }
 
 .gallery img {
@@ -58,10 +59,17 @@ html[theme] body.studio .gallery {
     max-height: unset;
     max-width: 100%;
     margin: 0 0;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.7);
+    clip-path: inset(0px -10px -10px -10px);
+
 }
 
 html[theme] body.studio main section * {
     margin-bottom: 0;
+}
+
+html[theme] body.studio .map-container {
+    margin-top: 10px;
 }
 
 
