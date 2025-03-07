@@ -30,7 +30,7 @@ html[theme="dark"] {
 html[theme="light"] {
 	--text: #2b2b2b;    /*or: 2c3e50*/
     --text2: #656565;
-	--accent: #c2881d;  /*or: e67e22*/
+	--accent: #e8a62c;  /*or: e67e22*/
 	--title: #315a59;   /*or: 1abc9c*/
     --title-shadow: #a0a0a0;
 	--link: #1b816c;    /*or: 48C9B0*/

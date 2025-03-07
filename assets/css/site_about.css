@@ -141,110 +141,139 @@ html[theme] .about-card a:hover {
 
 
 
-
-.timeline {
-    position: relative;
-    padding: 50px 0;
+/* Allgemeine Stile */
+html[theme] .timeline-container {
+    padding-bottom: 100px;
 }
-
-.timeline-container {
+html[theme] .timeline {
     position: relative;
+    padding: 0 20px 50px;
     max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: auto;
 }
 
-/* Zentrale Zeitstrahl-Linie */
-.timeline-container::before {
-    content: "";
+/* Zentrale Linie */
+html[theme] .timeline-line {
     position: absolute;
-    width: 4px;
-    background-color: var(--primary-color);
+    width: 4.5px;
+    background-color: var(--accent);
+    left: 29px;
     top: 0;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    z-index: 0;
+    margin-top: 129px;
 }
 
-/* Meilenstein-Punkte */
-.timeline-dot {
-    width: 16px;
-    height: 16px;
-    background-color: var(--accent-color);
+
+/* Meilenstein-Punkte (Dots) */
+html[theme] .timeline-dot {
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 20px 0;
+    top: 120px;
+    z-index: 1;
 }
 
-/* Timeline Cards */
-.timeline-card {
+html[theme] #dot1 {
+    background-color:#48C9B0 !important; 
+    width: 30px !important; 
+    height: 30px !important;
+    left: -4px;
+}
+
+html[theme="dark"] .timeline-line {
+    box-shadow: inset 0px 0px 2px #000000ff;
+    background-color: var(--accent);
+}
+html[theme="dark"] .timeline-dot {
+    box-shadow: inset 0px 0px 7px #000000e0;
+    background-color: var(--accent);
+}
+
+html[theme="light"] .timeline-line {
+    box-shadow: inset 0px 0px 4px #000000ae;
+    background-color: var(--accent);
+}
+
+html[theme="light"] .timeline-dot {
+    box-shadow: inset 0px 0px 7px #0000009e;
+    background-color: var(--accent);
+}
+
+/* Timeline Cards (Floating) */
+html[theme] .timeline-card {
     background: var(--card-bg);
-    border-radius: 10px;
+    border-radius: 3px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
     padding: 15px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(100% - 60px);
+    margin-left: 50px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.3s ease-out;
     transform: translateY(30px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.timeline-card img {
+html[theme] .timeline-card:hover {
+    transition: transform 0s ease-out;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 13px rgba(0, 0, 0, 0.4);
+}
+
+html[theme] .timeline-card img {
     width: 100%;
-    height: 180px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 3px;
 }
 
-.timeline-text {
-    text-align: center;
+html[theme] .timeline-text {
+    text-align: left;
     margin-top: 10px;
 }
 
-.timeline-text h3 {
+html[theme] .timeline-text h3 {
     font-size: 1.3rem;
     margin-bottom: 5px;
 }
 
-.timeline-text p {
+html[theme] .timeline-text p {
     font-size: 1rem;
     color: var(--text-color);
 }
 
-/* Position der Cards - Abwechselnd links/rechts */
-.timeline-item:nth-child(odd) .timeline-card {
-    left: calc(50% - 340px);
-}
-
-.timeline-item:nth-child(even) .timeline-card {
-    left: calc(50% + 40px);
-}
-
-/* Animation - Cards erscheinen beim Scrollen */
-.timeline-card.appear {
+/* Animation – Karten erscheinen beim Scrollen */
+html[theme] .timeline-card.appear {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Responsive Anpassung */
-@media screen and (max-width: 768px) {
-    .timeline-container::before {
-        left: 20px;
+/* Desktop-Optimierung */
+@media screen and (min-width: 768px) {
+    html[theme] .timeline-line {
+        left: 50%;
+        transform: translateX(-50%);
     }
-    .timeline-dot {
-        left: 20px;
+    html[theme] .timeline-dot {
+        left: 50%;
+        transform: translateX(-50%);
     }
-    .timeline-card {
-        width: 90%;
-        left: auto !important;
-        margin-left: 40px;
+    html[theme] #dot1 {
+        left: 50%;
+    }
+
+    html[theme] .timeline-card {
+        width: 40%;
+        margin: 10px;
+        margin-bottom: -70px !important;
+    }
+    html[theme] .timeline-item:nth-child(odd) .timeline-card {
+        left: 0;
+        text-align: right;
+    }
+    html[theme] .timeline-item:nth-child(even) .timeline-card {
+        left: calc(50% + 40px);
+        text-align: left;
     }
 }
-

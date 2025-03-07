@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function checkScroll() {
         timelineCards.forEach((card) => {
             const rect = card.getBoundingClientRect();
-            if (rect.top < window.innerHeight * 0.85) {
+            if (rect.top < window.innerHeight * 0.60) {
                 card.classList.add("appear");
             }
         });
