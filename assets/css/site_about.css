@@ -1,0 +1,138 @@
+/* IMPORT AUS MAIN.CSS ERFOLGT DORT, DAMIT DIE VARIABLEN VERFÜGBAR SIND */
+
+/* Hauptcontainer mit max-width */
+html[theme] body.about {
+    background-color: var(--bg);
+}
+
+html[theme="light"] body.about {
+    background-color: white;
+}
+
+html[theme] body.about main.container {
+    width: 100%;
+    padding: 0;
+    margin-top: 55px;
+}
+
+html[theme] body.about section {
+    margin: 0px auto;
+    max-width: 950px;
+
+}
+ 
+html[theme] body.about .about-section {
+    padding: 0;
+}
+
+/* HERO SECTION */
+html[theme] body.about .hero {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/* Overlay für bessere Lesbarkeit */
+html[theme] body.about .hero .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    padding: 25px 15px;
+}
+
+/* Überschrift im Hero */
+html[theme] body.about .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px black;
+    color: #fff;
+}
+
+/* Beschreibung im Hero */
+html[theme] body.about .hero p {
+    font-size: 0.9rem;
+    color: #ecf0f1;
+}
+
+/* GRID FÜR SERVICE CARDS */
+html[theme] .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    justify-content: center;
+    padding: 50px 30px;
+    background-color: #00000020;
+    margin-bottom: 0px;
+}
+
+html[theme="light"] .about-grid {
+    background-color: #d8d8d8;
+}
+
+/* STYLING DER SERVICE CARDS */
+html[theme] .about-card {
+    background-color: var(--bg2);
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+html[theme="light"] .about-card {
+    background-color: #f2f2f2;
+}
+
+html[theme] .about-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 13px rgba(0, 0, 0, 0.4);
+}
+
+html[theme] .about-card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--link);
+    text-decoration: none;
+}
+
+html[theme] .about-card a:hover {
+    text-decoration: underline;
+}
+
+/* MEDIA QUERY: Anpassungen für größere Screens */
+@media (min-width: 768px) {
+    html[theme] body.about main.container {
+        padding: 0px;
+    }
+
+    html[theme] body.about .about-card {
+        max-width: 280px;
+    }
+    
+    html[theme] body.about .hero .overlay {
+        width: 100%;
+    }
+    
+    html[theme] .about-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 50px 50px;
+    }
+    
+    html[theme] body.about .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    html[theme] body.about .hero p {
+        font-size: 1.2rem;
+    }
+}

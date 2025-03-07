@@ -12,6 +12,7 @@ Bootstrap is used here -> in order to overwrite, use:
 @import url("site_impressum.css");
 @import url("site_services.css");
 @import url("site_studio.css");
+@import url("site_about.css");
 
 
 /* 01 Generic STYLES that apply for all html pages --------------------------- */
