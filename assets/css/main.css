@@ -48,7 +48,7 @@ html[theme] h4,
 html[theme] h5,
 html[theme] h6 {
     color: var(--title);
-    text-shadow: 1px 2px 5px var(--title-shadow);
+    text-shadow: 1px 2px 4px var(--title-shadow);
 }
 
 html[theme] a {

@@ -23,10 +23,10 @@ html[theme] body.about section {
  
 html[theme] body.about .about-section {
     padding: 0;
+    background-color: #00000035;
 }
 
 html[theme="dark"] body.about .about-section {
-    background-color: #00000035;
 }
 
 /* HERO SECTION */
@@ -98,6 +98,10 @@ html[theme="light"] .about-card {
 html[theme] .about-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 13px rgba(0, 0, 0, 0.4);
+}
+
+html[theme] .about-card h3 {
+    color: var(--link);
 }
 
 html[theme] .about-card a {
@@ -221,6 +225,10 @@ html[theme] .timeline-card {
 
 html[theme="light"] .timeline-card {
     background-color: #f8f8f8;
+}
+
+html[theme] .timeline-card h3 {
+    color: var(--link);
 }
 
 /* Dreieck-Indicator (visuelle Verbindung zwischen Karte & Punkt) */
