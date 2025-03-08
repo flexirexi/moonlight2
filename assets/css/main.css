@@ -266,7 +266,7 @@ html[theme] main section {
     padding: 0 10px;
 }
 
-html[theme="light"] main section {
+html[theme="light"] body.index main section {
     background-color: #ebebeb;
 }
 

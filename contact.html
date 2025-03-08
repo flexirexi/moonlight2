@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="artist" data-lang="tContactArtist">Künstlername oder Band (optional)</label>
+                    <label class="optional" for="artist" data-lang="tContactArtist">Künstlername oder Band (optional)</label>
                     <input type="text" id="artist" name="artist">
                 </div>
 
@@ -69,7 +69,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="recording" data-lang="tContactRecording">Recording</label>
+                    <label class="important"  for="recording" data-lang="tContactRecording">Recording</label>
                     <select id="recording" name="recording">
                         <option value="none" selected>Nein</option>
                         <option value="voice">Voice Recording</option>
@@ -78,7 +78,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="production" data-lang="tContactProduction">Production</label>
+                    <label class="important"  for="production" data-lang="tContactProduction">Production</label>
                     <select id="production" name="production">
                         <option value="none" selected>Nein</option>
                         <option value="mix">Mix</option>
@@ -87,7 +87,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="composition" data-lang="tContactComposition">Komposition</label>
+                    <label class="important" for="composition" data-lang="tContactComposition">Komposition</label>
                     <select id="composition" name="composition">
                         <option value="none" selected>Nein</option>
                         <option value="film">Für Film/Werbung</option>
@@ -97,7 +97,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="other" data-lang="tContactOther">Anderes</label>
+                    <label class="important"  for="other" data-lang="tContactOther">Anderes</label>
                     <select id="other" name="other">
                         <option value="none" selected>Nein</option>
                         <option value="songwriting">Songwriting</option>
@@ -106,8 +106,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="description" data-lang="tContactDescription">Beschreibung (max. 250 Zeichen)</label>
-                    <textarea id="description" name="description" rows="4" maxlength="250"></textarea>
+                    <label for="description" data-lang="tContactDescription">Beschreibung (max. 750 Zeichen)</label>
+                    <textarea id="description" name="description" rows="8" maxlength="750" style="resize: vertical;"></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary" data-lang="tContactSubmit">Abschicken</button>

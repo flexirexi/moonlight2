@@ -17,7 +17,7 @@ html[theme] body.contact main.container {
 }
 
 html[theme="light"] body.contact main.container {
-    background-color: #6e2929 !important;
+    background-color: #a1a1a1 !important;
 }
 
 html[theme] body.contact section {
@@ -54,7 +54,7 @@ html[theme] .form-group {
 html[theme] .form-group label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-left: 15px;
 }
 
 html[theme] .form-group input,
@@ -67,6 +67,13 @@ html[theme] .form-group textarea {
     font-size: 1rem;
     background-color: var(--bg2);
     color: var(--text-color);
+    
+}
+
+html[theme="light"] .form-group input,
+html[theme="light"] .form-group select,
+html[theme="light"] .form-group textarea {
+    background-color: var(--bg);
 }
 
 html[theme] .form-group textarea {
@@ -81,17 +88,34 @@ html[theme] .btn-primary {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+    
 }
 
 html[theme] .btn-primary:hover {
     background-color: var(--accent-dark);
 }
 
+html[theme="dark"] .optional {
+    color: #b0b0b0;
+}
+
+html[theme="light"] .optional {
+    color: #606060;
+}
+
+html[theme="dark"] .important {
+    color: var(--accent);
+}
+
+html[theme="light"] .important {
+    color: #8e5c00;
+}
 
 /* MEDIA QUERY: Anpassungen für größere Screens */
 @media (min-width: 768px) {
     html[theme] body.contact main.container {
-        padding: 0px;
+        padding: 0 35px 0;
     }    
 
 }
