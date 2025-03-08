@@ -26,7 +26,7 @@ html[theme] body.about .about-section {
 }
 
 html[theme="dark"] body.about .about-section {
-    background-color: #00000022;
+    background-color: #00000035;
 }
 
 /* HERO SECTION */
@@ -73,7 +73,6 @@ html[theme] .about-grid {
     gap: 35px;
     justify-content: center;
     padding: 50px 30px;
-    background-color: #00000020;
     margin-bottom: 0px;
 }
 
@@ -208,7 +207,7 @@ html[theme="light"] .timeline-dot {
 
 /* Timeline Cards (Floating) */
 html[theme] .timeline-card {
-    background: var(--bg);
+    background-color: var(--bg);
     border-radius: 3px;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
     padding: 15px;
