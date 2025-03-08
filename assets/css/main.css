@@ -13,6 +13,7 @@ Bootstrap is used here -> in order to overwrite, use:
 @import url("site_services.css");
 @import url("site_studio.css");
 @import url("site_about.css");
+@import url("site_contact.css");
 
 
 /* 01 Generic STYLES that apply for all html pages --------------------------- */
@@ -120,6 +121,10 @@ html[theme] #btnContactMobile {
     width: fit-content;
     margin-left: auto;
     margin-right: 20px;
+}
+
+html[theme] #btContactDesktop {
+    display: none;
 }
 
 html[theme] .hero {
@@ -370,6 +375,11 @@ html[theme] #theme-toggle {
     html[theme] #btnContactMobile {
         margin: 0;
         display: none;
+    }
+
+    html[theme] #btContactDesktop {
+        display: flex;
+        margin: auto 20px auto;
     }
 
     html[theme] #language-toggle,

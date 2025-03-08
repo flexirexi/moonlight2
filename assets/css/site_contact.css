@@ -1,6 +1,5 @@
 /* IMPORT AUS MAIN.CSS ERFOLGT DORT, DAMIT DIE VARIABLEN VERFÜGBAR SIND */
 
-/* Hauptcontainer mit max-width */
 html[theme] body.contact {
     background-color: var(--bg);
 }
@@ -13,13 +12,12 @@ html[theme] body.contact main.container {
     width: 100%;
     padding: 0;
     margin-top: 55px;
-    background-color: #00000020;
+    background-color: #00000030;
     max-width: 900px;
 }
 
 html[theme="light"] body.contact main.container {
-    background-color: #d8d8d8;
-
+    background-color: #6e2929 !important;
 }
 
 html[theme] body.contact section {
@@ -33,7 +31,10 @@ html[theme] .contact-section {
 
 html[theme] .contact-section h2 {
     margin-top: 20px;
+}
 
+html[theme] .contact-section p {
+    margin-top: 15px;
 }
 
 html[theme] body.contact main section * {
@@ -43,6 +44,49 @@ html[theme] body.contact main section * {
 html[theme] body.contact .map-container {
     margin-top: 10px;
 }
+
+html[theme] .form-group {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+html[theme] .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+html[theme] .form-group input,
+html[theme] .form-group select,
+html[theme] .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--bg2);
+    color: var(--text-color);
+}
+
+html[theme] .form-group textarea {
+    resize: none;
+}
+
+html[theme] .btn-primary {
+    background-color: var(--accent);
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+html[theme] .btn-primary:hover {
+    background-color: var(--accent-dark);
+}
+
 
 /* MEDIA QUERY: Anpassungen für größere Screens */
 @media (min-width: 768px) {

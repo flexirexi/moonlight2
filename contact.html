@@ -43,41 +43,75 @@
     </nav>
     
     <main class="container">
-        <!-- Unser Studio Abschnitt -->
         <section class="contact-section">
-            <h2 data-lang="tFormularTitle">Kontaktformular</h2>
-            <p data-lang="tFormularText">
-                Unser Studio ist neu, digital und modern. Wir arbeiten mit hochwertigen VST-Plugins und nutzen 
-                Software wie Kontakt, Izotope, Serum und Reaktor. Unsere Hardware ist auf dem neuesten Stand,
-                was schnelle und effiziente Produktionsprozesse ermöglicht. Neben einer Gesangskabine verfügen
-                wir über ein MIDI-Keyboard mit Hammermechanik, Gitarren und Bass. Weitere Erweiterungen sind geplant!
-                Zudem bilden wir uns kontinuierlich im Bereich Audio Engineering weiter, um stets beste Qualität zu liefern.
-            </p>
-        </section>
-    
-        <!-- Musikerzentrum Abschnitt -->
-        <section class="contact-section">
-            <h2 data-lang="tContactTitle">Das Musikerzentrum</h2>
-            <p data-lang="tContactDetails">
-                Telefonnummer:<br>
-                Email: <br>
-            </p>
+            <h2 data-lang="tContactHeader">Schreib uns eine Nachricht</h2>
+            <p data-lang="tContactSubtext">Fülle das Formular aus, und wir melden uns bei dir.</p>
 
-        </section>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name" data-lang="tContactName">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-        <!-- Google Maps Integration -->
-        <section class="contact-section">
-            <h2 data-lang="tJourney">Anfahrt</h2>
-            <div class="map-container">
-                <iframe 
-                    width="100%" 
-                    height="400" 
-                    frameborder="0" 
-                    style="border:0; margin-top: 15px;" 
-                    allowfullscreen 
-                    src="https://www.google.com/maps?q=Udenhoutstraße+2a+Rodgau&output=embed">
-                </iframe>
-            </div>
+                <div class="form-group">
+                    <label for="artist" data-lang="tContactArtist">Künstlername oder Band (optional)</label>
+                    <input type="text" id="artist" name="artist">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" data-lang="tContactPhone">Telefonnummer</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" data-lang="tContactEmail">E-Mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="recording" data-lang="tContactRecording">Recording</label>
+                    <select id="recording" name="recording">
+                        <option value="none" selected>Nein</option>
+                        <option value="voice">Voice Recording</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="production" data-lang="tContactProduction">Production</label>
+                    <select id="production" name="production">
+                        <option value="none" selected>Nein</option>
+                        <option value="mix">Mix</option>
+                        <option value="remake">Remake</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="composition" data-lang="tContactComposition">Komposition</label>
+                    <select id="composition" name="composition">
+                        <option value="none" selected>Nein</option>
+                        <option value="film">Für Film/Werbung</option>
+                        <option value="instrumental">Instrumentale Komposition</option>
+                        <option value="sequences">Sequenzen für deinen Song</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="other" data-lang="tContactOther">Anderes</label>
+                    <select id="other" name="other">
+                        <option value="none" selected>Nein</option>
+                        <option value="songwriting">Songwriting</option>
+                        <option value="custom">Individuelles Projekt</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description" data-lang="tContactDescription">Beschreibung (max. 250 Zeichen)</label>
+                    <textarea id="description" name="description" rows="4" maxlength="250"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" data-lang="tContactSubmit">Abschicken</button>
+            </form>
         </section>
     </main>
     
