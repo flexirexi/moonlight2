@@ -70,5 +70,38 @@
     "tOurZentrum": "The Musikerzentrum Rodgau",
     "tOurZentrumText": "<br>Our studio is located in the Musikerzentrum Rodgau, a creative environment for musicians of all genres. Numerous rehearsal rooms, music teachers, and bands work here in an inspiring atmosphere. The center is accessible via the S-Bahn S1 (Rodgau-Weißkirchen station). In addition, there is a cafeteria and, of course, sanitary facilities available for all visitors.",
     
-    "tJourney": "Journey"
+    "tJourney": "Journey",
+
+    "tContactHeader":    	"Send us a message",
+    "tContactSubtext":   	"Fill out the form and we’ll get back to you shortly.",
+    "tContactNameFirst": 	"First name",
+    "tContactNameLast": 	"Last name",
+    "tContactArtist":		"Artist name or Band (optional)",
+    "tContactPhone":		"Phone number",
+    "tContactEmail":		"Email",
+    "tContactRecording":	"Recording",
+    "tContactProduction":	"Production",
+    "tContactComposition":	"Composition",
+    "tContactOther":		"Other",
+    "tContactTitle":		"Title",
+    "tContactDescription":	"Description",
+    "tContactSubmit":		"Submit",
+
+    "tContactRecordingNo":			"No",	
+    "tContactRecordingVoice":		"Voice Recording (For a Song)",
+    "tContactRecordingOther":		"Other (please specify)",
+
+    "tContactProductionNo":			"No",
+    "tContactProductionMix":		"Mix",
+    "tContactProductionRemake":		"Other (please specify)",
+
+    "tContactCompositionNo":		"No",
+    "tContactCompositionFilm":		"For film or advertisement (please specify)",
+    "tContactCompositionInstr":		"Instrumental composition (please specify)",
+    "tContactCompositionForSong":	"Sequences for a song",
+
+    "tContactOtherNo":				"No",
+    "tContactOtherSongwriting":		"Songwriting (please specify)",
+    "tContactOtherIndividual":		"Individual project (please specify)"
+
 }

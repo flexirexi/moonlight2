@@ -71,6 +71,38 @@
   "tOurZentrum": "Das Musikerzentrum Rodgau",
   "tOurZentrumText": "<br>Unser Studio befindet sich im Musikerzentrum Rodgau, einer kreativen Umgebung für Musiker aller Genres. Hier gibt es zahlreiche Proberäume, Musiklehrer und Bands, die in einer inspirierenden Atmosphäre arbeiten. Das Zentrum ist mit der S-Bahn S1 erreichbar (Haltestelle Rodgau-Weißkirchen). Zudem gibt es eine Cafeteria und selbstverständlich sanitäre Anlagen für alle Besucher.",
 
-  "tJourney": "Anfahrt"
+  "tJourney": "Anfahrt",
+
+  "tContactHeader": 		"Schreib uns eine Nachricht",
+  "tContactSubtext": 		"Fülle das Formular aus, und wir melden uns bei dir.",
+  "tContactNameFirst": 	"Vorname",
+  "tContactNameLast": 	"Nachname",
+  "tContactArtist":		"Künstler- oder Bandname (optional)",
+  "tContactPhone":		"Telefonnummer",
+  "tContactEmail":		"E-Mail",
+  "tContactRecording":	"Recording",
+  "tContactProduction":	"Production",
+  "tContactComposition":	"Komposition",
+  "tContactOther":		"Sonstiges",
+  "tContactTitle":		"Titel",
+  "tContactDescription":	"Nachricht",
+  "tContactSubmit":		"Abschicken",
+
+  "tContactRecordingNo":			"Nein",	
+  "tContactRecordingVoice":		"Gesangsaufnahme",
+  "tContactRecordingOther":		"Andere Aufnahme (bitte beschreiben)",
+
+  "tContactProductionNo":			"Nein",
+  "tContactProductionMix":		"Abmischen/Mix",
+  "tContactProductionRemake":		"Remake/Nachproduktion (bitte beschreiben)",
+
+  "tContactCompositionNo":		"Nein",
+  "tContactCompositionFilm":		"Für Film oder Werbung (bitte beschreiben)",
+  "tContactCompositionInstr":		"Instrumentale Komposition (bitte beschreiben)",
+  "tContactCompositionForSong":	"Sequenzen für einen Song (bitte beschreiben)",
+
+  "tContactOtherNo":				"Nein",
+  "tContactOtherSongwriting":		"Songwriting (bitte beschreiben)",
+  "tContactOtherIndividual":		"Individuelles Projekt (bitte näher erklären)"
 
 }

@@ -54,7 +54,7 @@
                         <input type="text" id="firstname" name="firstname" required>
                     </div>
                     <div class="form-group">
-                        <label for="lastname" data-lang="tContactNameFirst">Nachname</label>
+                        <label for="lastname" data-lang="tContactNameLast">Nachname</label>
                         <input type="text" id="lastname" name="lastname" required>
                     </div>
                 </div>
@@ -77,37 +77,37 @@
                 <div class="form-group mt-5">
                     <label class="important"  for="recording" data-lang="tContactRecording">Recording</label>
                     <select id="recording" name="recording">
-                        <option value="none" selected>Nein</option>
-                        <option value="voice">Voice Recording</option>
-                        <option value="other">Other</option>
+                        <option value="none" data-lang="tContactRecordingNo" selected>Nein</option>
+                        <option value="voice" data-lang="tContactRecordingVoice" >Voice Recording</option>
+                        <option value="other" data-lang="tContactRecordingOther" >Other</option>
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label class="important"  for="production" data-lang="tContactProduction">Production</label>
                     <select id="production" name="production">
-                        <option value="none" selected>Nein</option>
-                        <option value="mix">Mix</option>
-                        <option value="remake">Remake</option>
+                        <option value="none" data-lang="tContactProductionNo" selected>Nein</option>
+                        <option value="mix" data-lang="tContactProductionMix">Mix</option>
+                        <option value="remake" data-lang="tContactProductionRemake">Remake</option>
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label class="important" for="composition" data-lang="tContactComposition">Komposition</label>
                     <select id="composition" name="composition">
-                        <option value="none" selected>Nein</option>
-                        <option value="film">Für Film/Werbung</option>
-                        <option value="instrumental">Instrumentale Komposition</option>
-                        <option value="sequences">Sequenzen für deinen Song</option>
+                        <option value="none" data-lang="tContactCompositionNo" selected>Nein</option>
+                        <option value="film" data-lang="tContactCompositionFilm">Für Film/Werbung</option>
+                        <option value="instrumental" data-lang="tContactCompositionInstr">Instrumentale Komposition</option>
+                        <option value="sequences" data-lang="tContactCompositionForSong">Sequenzen für deinen Song</option>
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label class="important"  for="other" data-lang="tContactOther">Sonstiges</label>
                     <select id="other" name="other">
-                        <option value="none" selected>Nein</option>
-                        <option value="songwriting">Songwriting</option>
-                        <option value="custom">Individuelles Projekt</option>
+                        <option value="none" data-lang="tContactOtherNo" selected>Nein</option>
+                        <option value="songwriting" data-lang="tContactOtherSongwriting">Songwriting</option>
+                        <option value="custom" data-lang="tContactOtherIndividual">Individuelles Projekt</option>
                     </select>
                 </div>
 
