@@ -5,7 +5,7 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
 
     const form = this;
 
-    emailjs.sendForm("service_5x00awe", "template_nw3yjo8", form)
+    emailjs.sendForm("service_5x00awe", "template_am9lqdr", form)
         .then(function () {
             alert("Nachricht erfolgreich gesendet! Wir melden uns bald.");
             form.reset();
