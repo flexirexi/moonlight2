@@ -45,10 +45,16 @@ html[data-theme] body.contact .map-container {
     margin-top: 10px;
 }
 
+html[data-theme] .form-group-name-container {
+    display: grid;
+    gap: 0px;
+}
+
 html[data-theme] .form-group {
     margin-top: 15px;
     margin-bottom: 20px;
     text-align: left;
+
 }
 
 html[data-theme] .form-group label {
@@ -116,6 +122,11 @@ html[data-theme="light"] .important {
 @media (min-width: 768px) {
     html[data-theme] body.contact main.container {
         padding: 0 35px 0;
-    }    
+    }
 
+    html[data-theme] .form-group-name-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
 }
+

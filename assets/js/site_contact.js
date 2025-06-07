@@ -1,7 +1,7 @@
 document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
     alert("test");
-    
+
     const formData = new FormData(this);
     const data = Object.fromEntries(formData.entries());
 
@@ -24,5 +24,5 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     const body = encodeURIComponent(message);
 
     // window.location.href = `mailto:${mailTo}?subject=${subject}&body=${body}`;
-    console.log(body);
+    console.log(body.toString);
 });

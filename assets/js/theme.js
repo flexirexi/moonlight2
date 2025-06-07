@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const html = document.documentElement;
 
     // Prüfen, ob ein gespeichertes Theme existiert
-    const savedTheme = localStorage.getItem("theme") || "dark";
-    html.setAttribute("theme", savedTheme);
+    const savedTheme = localStorage.getItem("data-theme") || "dark";
+    html.setAttribute("data-theme", savedTheme);
     themeIcon.classList.add(savedTheme === "light" ? "fa-moon" : "fa-sun");
 
     // Event-Listener für den Theme-Switch
     themeToggle.addEventListener("click", () => {
-        const newTheme = html.getAttribute("theme") === "dark" ? "light" : "dark";
-        html.setAttribute("theme", newTheme);
-        localStorage.setItem("theme", newTheme);
+        const newTheme = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        html.setAttribute("data-theme", newTheme);
+        localStorage.setItem("data-theme", newTheme);
 
         // Icon wechseln
         themeIcon.classList.remove("fa-moon", "fa-sun");
