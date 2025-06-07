@@ -1,28 +1,16 @@
 document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
-    alert("test");
 
-    const formData = new FormData(this);
-    const data = Object.fromEntries(formData.entries());
+    emailjs.init("td8yqeDgGLiud1lKu"); // kein secret key, nur public
 
-    const message = `
-        Name: ${data.name}
-        Künstlername/Band: ${data.artist || "Nicht angegeben"}
-        Telefon: ${data.phone}
-        E-Mail: ${data.email}
+    const form = this;
 
-        Recording: ${data.recording}
-        Production: ${data.production}
-        Komposition: ${data.composition}
-        Anderes: ${data.other}
-
-        Beschreibung: ${data.description}
-    `;
-
-    const mailTo = "requests@moonlightstudiosffm.com";
-    const subject = "Neue Anfrage über das Kontaktformular";
-    const body = encodeURIComponent(message);
-
-    // window.location.href = `mailto:${mailTo}?subject=${subject}&body=${body}`;
-    console.log(body.toString);
+    emailjs.sendForm("service_5x00awe", "template_nw3yjo8", form)
+        .then(function () {
+            alert("Nachricht erfolgreich gesendet! Wir melden uns bald.");
+            form.reset();
+        }, function (error) {
+            console.error("Email konnte nicht gesendet werden:", error);
+            alert("Ein Fehler ist aufgetreten. Bitte versuche es später erneut.");
+        });
 });
