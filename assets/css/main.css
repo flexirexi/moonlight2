@@ -1,9 +1,9 @@
 /* 
 INFO: 
 Bootstrap is used here -> in order to overwrite, use: 
-    <selector>[theme]           for elements in all themes, 
-    <selector>[theme="dark"]    for elements only in dark mode,
-    <selector>[theme=light"]    for elements only in light mode
+    <selector>[data-theme]           for elements in all themes, 
+    <selector>[data-theme="dark"]    for elements only in dark mode,
+    <selector>[data-theme=light"]    for elements only in light mode
 */
 
 /* Google font imports */
@@ -17,50 +17,50 @@ Bootstrap is used here -> in order to overwrite, use:
 
 
 /* 01 Generic STYLES that apply for all html pages --------------------------- */
-html[theme] * {
+html[data-theme] * {
     font-family: "Ubuntu", sans-serif;
     color: var(--text);
     box-sizing: border-box;
 }
 
-html[theme] main {
+html[data-theme] main {
     padding: 0;
 }
 
-html[theme] .fa,
-html[theme] .fas {
+html[data-theme] .fa,
+html[data-theme] .fas {
     font-family: "Font Awesome 8 Free", "Font Awesome 7 Free", "Font Awesome 6 Free", "Font Awesome 5 Free";     /* that's important otherwise the icons won't be shown */
     font-weight: 900;
 }
 
-html[theme] .fab {
+html[data-theme] .fab {
     font-family: "Font Awesome 8 Brands", "Font Awesome 7 Brands", "Font Awesome 6 Brands", "Font Awesome 5 Brands";
 }
 
-html[theme] body {
+html[data-theme] body {
     background-color: var(--bg);
 }
 
-html[theme] h1,
-html[theme] h2,
-html[theme] h3,
-html[theme] h4,
-html[theme] h5,
-html[theme] h6 {
+html[data-theme] h1,
+html[data-theme] h2,
+html[data-theme] h3,
+html[data-theme] h4,
+html[data-theme] h5,
+html[data-theme] h6 {
     color: var(--title);
     text-shadow: 1px 2px 4px var(--title-shadow);
 }
 
-html[theme] a {
+html[data-theme] a {
     color: var(--link);
     text-decoration: none;
 }
 
-html[theme] .navbar {
+html[data-theme] .navbar {
     background-color: var(--nav-bg);
 }
 
-html[theme] summary {
+html[data-theme] summary {
     list-style: none; /* Entfernt den Standard-Pfeil */
     cursor: pointer;
 }
@@ -80,16 +80,16 @@ details[open] summary::after {
     transform: rotate(180deg);
 }
 
-html[theme="light"] footer {
+html[data-theme="light"] footer {
     background-color: var(--bg2);
 }
 
-html[theme="dark"] .footer {
+html[data-theme="dark"] .footer {
     background-color: var(--nav-bg);
 }
 
 /* 02 General classes for all pages ------------------------------------------ */
-html[theme] .nav-contact-btn {
+html[data-theme] .nav-contact-btn {
     width: fit-content;
     text-align: center;
     font-weight: bold;
@@ -105,29 +105,29 @@ html[theme] .nav-contact-btn {
     margin-left: 20px;
 }
 
-html[theme] .nav-contact-btn:hover {
+html[data-theme] .nav-contact-btn:hover {
     background-color: var(--accent);
     border: 1px solid var(--accent);
     color: black;
     text-decoration: none;
 }
 
-html[theme] .navbar .nav-contact-btn {
-    display: inline-block; /* Stellt sicher, dass er neben dem Theme-Toggle bleibt */
+html[data-theme] .navbar .nav-contact-btn {
+    display: inline-block; /* Stellt sicher, dass er neben dem data-theme-Toggle bleibt */
 }
 
-html[theme] #btnContactMobile {
+html[data-theme] #btnContactMobile {
     display: inline;
     width: fit-content;
     margin-left: auto;
     margin-right: 20px;
 }
 
-html[theme] #btContactDesktop {
+html[data-theme] #btContactDesktop {
     display: none;
 }
 
-html[theme] .hero {
+html[data-theme] .hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +139,7 @@ html[theme] .hero {
 }
 
 /* Headline Positionierung */
-html[theme] .hero-text {
+html[data-theme] .hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -151,64 +151,64 @@ html[theme] .hero-text {
     text-shadow: 2px 3px 6px #000000c8;
 }
 
-html[theme] .hero-text * {
+html[data-theme] .hero-text * {
     color: #ecf0f1;
 }
 
-html[theme] .hero-text .small {
+html[data-theme] .hero-text .small {
     font-size: clamp(0.8rem, 2vw, 1.2rem);
 }
 
-html[theme] .hero-text .xxl {
+html[data-theme] .hero-text .xxl {
     font-size: clamp(1.75rem, 8vw, 4.5rem);
 }
 
-html[theme] .hero-text .line {
+html[data-theme] .hero-text .line {
     display: block;
 }
 
-html[theme] .hero-text .gap {
+html[data-theme] .hero-text .gap {
     word-spacing: 20px;
 }
 
-html[theme] .hero-text .text-start {
+html[data-theme] .hero-text .text-start {
     margin-left: 5%;
 }
 
 /* Dynamische Verschiebung basierend auf Seitenverhältnis */
 @media (min-aspect-ratio: 16/9) {
-    html[theme] .hero-text {
+    html[data-theme] .hero-text {
         top: 45%; /* Höher platzieren, wenn breiter als 16:9 */
     }
 }
 
 @media (max-aspect-ratio: 4/3) {
-    html[theme] .hero-text {
+    html[data-theme] .hero-text {
         top: 55%; /* Etwas niedriger setzen, wenn fast quadratisch */
     }
 }
 
-html[theme] nav a {
+html[data-theme] nav a {
     margin: 0 6px;
     font-size: 1.2rem;
 }
 
-html[theme] nav a:hover {
+html[data-theme] nav a:hover {
     text-decoration: 1px underline;
     text-underline-offset: 4px;
 }
 
-html[theme] .nav-link {
+html[data-theme] .nav-link {
     color: #ecf0f1;
 }
 
-html[theme] .nav-link:hover {
+html[data-theme] .nav-link:hover {
     color: #1abc9c;
     text-decoration: 1px underline white;
     text-underline-offset: 5px;
 }
 
-html[theme] #navbarNav ul li {
+html[data-theme] #navbarNav ul li {
     margin: 0 5px;
 }
 
@@ -260,27 +260,27 @@ html[theme] #navbarNav ul li {
 
 
 /* Main Sections */
-html[theme] main section {
+html[data-theme] main section {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
-html[theme="light"] body.index main section {
+html[data-theme="light"] body.index main section {
     background-color: #ebebeb;
 }
 
-html[theme] main section * {
+html[data-theme] main section * {
     margin-bottom: 20px;
 }
 
-html[theme] .mb-2 a:hover {
+html[data-theme] .mb-2 a:hover {
     color: var(--link-text-hover);
     text-decoration: 1px underline;
     text-underline-offset: 4px;
 }
 
-html[theme] #audio-list details p {
+html[data-theme] #audio-list details p {
     color: var(--text2);
     background-color: #00000013;
     border-radius: 5px;
@@ -288,7 +288,7 @@ html[theme] #audio-list details p {
 }
 
 /* Social Media Icons: Space-Around */
-html[theme] .footer .mb-3 {
+html[data-theme] .footer .mb-3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,18 +299,18 @@ html[theme] .footer .mb-3 {
     min-height: 60px;
 }
 
-html[theme] .mb-0 {
+html[data-theme] .mb-0 {
     color: var(--text2);
 }
 
-html[theme] .mb-2 {
+html[data-theme] .mb-2 {
     min-height: 60px;
     justify-content: center;
     padding-top: 5px;
 }
 
 /* Icons zentrieren */
-html[theme] .footer a i {
+html[data-theme] .footer a i {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -319,18 +319,18 @@ html[theme] .footer a i {
 }
 
 
-html[theme] #social-links i:hover {
+html[data-theme] #social-links i:hover {
     color: var(--link);
 }
 
 /* Buttons */
-html[theme] .btn-primary {
+html[data-theme] .btn-primary {
     color: var(--act-text);
     border-color: var(--act-border);
     background-color: var(--act-bg);
 }
 
-html[theme] .btn-primary:hover {
+html[data-theme] .btn-primary:hover {
     color: var(--act-text-hover);
     border-color: var(--act-border-hover);
     background-color: var(--act-bg-hover);
@@ -339,17 +339,17 @@ html[theme] .btn-primary:hover {
 
 
 /* 03 specific elements ----------------------------------------------------- */
-html[theme] .brand {
+html[data-theme] .brand {
     margin-left: 10px;
 }
 
-html[theme] #language-toggle {
+html[data-theme] #language-toggle {
     margin-top: 10px;
     margin-left: 20px;
     min-width: 55px;
 }
 
-html[theme] #theme-toggle {
+html[data-theme] #theme-toggle {
     margin-top: 10px;
     margin-left: 20px;
     min-width: 45px;
@@ -359,31 +359,31 @@ html[theme] #theme-toggle {
 
 /* MEDIA QUERIES ------------------------------------------------------------ */
 @media (min-width: 768px) {
-    html[theme] .nav-contact-btn {
+    html[data-theme] .nav-contact-btn {
         width: auto;
         text-align: left;
     }
 
 
-    html[theme] main section {
+    html[data-theme] main section {
         padding: 0 30px;
     }
 
 }
 
 @media (min-width: 992px) {
-    html[theme] #btnContactMobile {
+    html[data-theme] #btnContactMobile {
         margin: 0;
         display: none;
     }
 
-    html[theme] #btContactDesktop {
+    html[data-theme] #btContactDesktop {
         display: flex;
         margin: auto 20px auto;
     }
 
-    html[theme] #language-toggle,
-    html[theme] #theme-toggle {
+    html[data-theme] #language-toggle,
+    html[data-theme] #theme-toggle {
         margin-top: unset;
         margin-left: unset;
     }

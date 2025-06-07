@@ -1,15 +1,15 @@
 /* IMPORT AUS MAIN.CSS ERFOLGT DORT, DAMIT DIE VARIABLEN VERFÜGBAR SIND */
 
 /* Hauptcontainer mit max-width */
-html[theme] body.studio {
+html[data-theme] body.studio {
     background-color: var(--bg);
 }
 
-html[theme="light"] body.studio {
+html[data-theme="light"] body.studio {
     background-color: white;
 }
 
-html[theme] body.studio main.container {
+html[data-theme] body.studio main.container {
     width: 100%;
     padding: 0;
     margin-top: 55px;
@@ -17,27 +17,27 @@ html[theme] body.studio main.container {
     max-width: 900px;
 }
 
-html[theme="light"] body.studio main.container {
+html[data-theme="light"] body.studio main.container {
     background-color: #d8d8d8;
 
 }
 
 
-html[theme] body.studio section {
+html[data-theme] body.studio section {
     margin: 0px auto;
 }
  
-html[theme] .studio-section {
+html[data-theme] .studio-section {
     padding: 20px 20px;
     max-width: 900px;
 }
 
-html[theme] .studio-section h2 {
+html[data-theme] .studio-section h2 {
     margin-top: 20px;
 
 }
 
-html[theme] body.studio .gallery {
+html[data-theme] body.studio .gallery {
     margin-top: 60px;
 }
 
@@ -64,11 +64,11 @@ html[theme] body.studio .gallery {
 
 }
 
-html[theme] body.studio main section * {
+html[data-theme] body.studio main section * {
     margin-bottom: 0;
 }
 
-html[theme] body.studio .map-container {
+html[data-theme] body.studio .map-container {
     margin-top: 10px;
 }
 
@@ -81,7 +81,7 @@ html[theme] body.studio .map-container {
 
 /* MEDIA QUERY: Anpassungen für größere Screens */
 @media (min-width: 768px) {
-    html[theme] body.studio main.container {
+    html[data-theme] body.studio main.container {
         padding: 0px;
     }
 

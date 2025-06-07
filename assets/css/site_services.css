@@ -1,32 +1,32 @@
 /* IMPORT AUS MAIN.CSS ERFOLGT DORT, DAMIT DIE VARIABLEN VERFÜGBAR SIND */
 
 /* Hauptcontainer mit max-width */
-html[theme] body.services {
+html[data-theme] body.services {
     background-color: var(--bg);
 }
 
-html[theme="light"] body.services {
+html[data-theme="light"] body.services {
     background-color: white;
 }
 
-html[theme] body.services main.container {
+html[data-theme] body.services main.container {
     width: 100%;
     padding: 0;
     margin-top: 55px;
 }
 
-html[theme] body.services section {
+html[data-theme] body.services section {
     margin: 0px auto;
     max-width: 950px;
 
 }
  
-html[theme] body.services .service-section {
+html[data-theme] body.services .service-section {
     padding: 0;
 }
 
 /* HERO SECTION */
-html[theme] body.services .hero {
+html[data-theme] body.services .hero {
     position: relative;
     width: 100%;
     height: 350px;
@@ -41,7 +41,7 @@ html[theme] body.services .hero {
 }
 
 /* Overlay für bessere Lesbarkeit */
-html[theme] body.services .hero .overlay {
+html[data-theme] body.services .hero .overlay {
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
@@ -49,7 +49,7 @@ html[theme] body.services .hero .overlay {
 }
 
 /* Überschrift im Hero */
-html[theme] body.services .hero h2 {
+html[data-theme] body.services .hero h2 {
     font-size: 2rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px black;
@@ -57,13 +57,13 @@ html[theme] body.services .hero h2 {
 }
 
 /* Beschreibung im Hero */
-html[theme] body.services .hero p {
+html[data-theme] body.services .hero p {
     font-size: 0.9rem;
     color: #ecf0f1;
 }
 
 /* GRID FÜR SERVICE CARDS */
-html[theme] .service-grid {
+html[data-theme] .service-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 35px;
@@ -73,12 +73,12 @@ html[theme] .service-grid {
     margin-bottom: 0px;
 }
 
-html[theme="light"] .service-grid {
+html[data-theme="light"] .service-grid {
     background-color: #d8d8d8;
 }
 
 /* STYLING DER SERVICE CARDS */
-html[theme] .service-card {
+html[data-theme] .service-card {
     background-color: var(--bg2);
     padding: 20px;
     border-radius: 3px;
@@ -88,16 +88,16 @@ html[theme] .service-card {
     margin: 0 auto;
 }
 
-html[theme="light"] .service-card {
+html[data-theme="light"] .service-card {
     background-color: #f2f2f2;
 }
 
-html[theme] .service-card:hover {
+html[data-theme] .service-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 13px rgba(0, 0, 0, 0.4);
 }
 
-html[theme] .service-card a {
+html[data-theme] .service-card a {
     display: inline-block;
     margin-top: 10px;
     font-weight: bold;
@@ -105,34 +105,34 @@ html[theme] .service-card a {
     text-decoration: none;
 }
 
-html[theme] .service-card a:hover {
+html[data-theme] .service-card a:hover {
     text-decoration: underline;
 }
 
 /* MEDIA QUERY: Anpassungen für größere Screens */
 @media (min-width: 768px) {
-    html[theme] body.services main.container {
+    html[data-theme] body.services main.container {
         padding: 0px;
     }
 
-    html[theme] body.services .service-card {
+    html[data-theme] body.services .service-card {
         max-width: 280px;
     }
     
-    html[theme] body.services .hero .overlay {
+    html[data-theme] body.services .hero .overlay {
         width: 100%;
     }
     
-    html[theme] .service-grid {
+    html[data-theme] .service-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         padding: 50px 50px;
     }
     
-    html[theme] body.services .hero h2 {
+    html[data-theme] body.services .hero h2 {
         font-size: 2.5rem;
     }
     
-    html[theme] body.services .hero p {
+    html[data-theme] body.services .hero p {
         font-size: 1.2rem;
     }
 }

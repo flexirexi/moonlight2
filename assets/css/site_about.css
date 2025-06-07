@@ -1,36 +1,36 @@
 /* IMPORT AUS MAIN.CSS ERFOLGT DORT, DAMIT DIE VARIABLEN VERFÜGBAR SIND */
 
 /* Hauptcontainer mit max-width */
-html[theme] body.about {
+html[data-theme] body.about {
     background-color: var(--bg);
 }
 
-html[theme="light"] body.about {
+html[data-theme="light"] body.about {
     background-color: white;
 }
 
-html[theme] body.about main.container {
+html[data-theme] body.about main.container {
     width: 100%;
     padding: 0;
     margin-top: 55px;
 }
 
-html[theme] body.about section {
+html[data-theme] body.about section {
     margin: 0px auto;
     max-width: 950px;
 
 }
  
-html[theme] body.about .about-section {
+html[data-theme] body.about .about-section {
     padding: 0;
     background-color: #00000035;
 }
 
-html[theme="dark"] body.about .about-section {
+html[data-theme="dark"] body.about .about-section {
 }
 
 /* HERO SECTION */
-html[theme] body.about .hero {
+html[data-theme] body.about .hero {
     position: relative;
     width: 100%;
     height: 350px;
@@ -45,7 +45,7 @@ html[theme] body.about .hero {
 }
 
 /* Overlay für bessere Lesbarkeit */
-html[theme] body.about .hero .overlay {
+html[data-theme] body.about .hero .overlay {
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
@@ -53,7 +53,7 @@ html[theme] body.about .hero .overlay {
 }
 
 /* Überschrift im Hero */
-html[theme] body.about .hero h2 {
+html[data-theme] body.about .hero h2 {
     font-size: 2rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px black;
@@ -61,13 +61,13 @@ html[theme] body.about .hero h2 {
 }
 
 /* Beschreibung im Hero */
-html[theme] body.about .hero p {
+html[data-theme] body.about .hero p {
     font-size: 0.9rem;
     color: #ecf0f1;
 }
 
 /* GRID FÜR SERVICE CARDS */
-html[theme] .about-grid {
+html[data-theme] .about-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 35px;
@@ -76,12 +76,12 @@ html[theme] .about-grid {
     margin-bottom: 0px;
 }
 
-html[theme="light"] .about-grid {
+html[data-theme="light"] .about-grid {
     background-color: #d8d8d8;
 }
 
 /* STYLING DER SERVICE CARDS */
-html[theme] .about-card {
+html[data-theme] .about-card {
     background-color: var(--bg2);
     padding: 20px;
     border-radius: 3px;
@@ -91,20 +91,20 @@ html[theme] .about-card {
     margin: 0 auto;
 }
 
-html[theme="light"] .about-card {
+html[data-theme="light"] .about-card {
     background-color: #f6f6f6;
 }
 
-html[theme] .about-card:hover {
+html[data-theme] .about-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 13px rgba(0, 0, 0, 0.4);
 }
 
-html[theme] .about-card h3 {
+html[data-theme] .about-card h3 {
     color: var(--link);
 }
 
-html[theme] .about-card a {
+html[data-theme] .about-card a {
     display: inline-block;
     margin-top: 10px;
     font-weight: bold;
@@ -112,34 +112,34 @@ html[theme] .about-card a {
     text-decoration: none;
 }
 
-html[theme] .about-card a:hover {
+html[data-theme] .about-card a:hover {
     text-decoration: underline;
 }
 
 /* MEDIA QUERY: Anpassungen für größere Screens */
 @media (min-width: 768px) {
-    html[theme] body.about main.container {
+    html[data-theme] body.about main.container {
         padding: 0px;
     }
 
-    html[theme] body.about .about-card {
+    html[data-theme] body.about .about-card {
         max-width: 280px;
     }
     
-    html[theme] body.about .hero .overlay {
+    html[data-theme] body.about .hero .overlay {
         width: 100%;
     }
     
-    html[theme] .about-grid {
+    html[data-theme] .about-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         padding: 50px 50px;
     }
     
-    html[theme] body.about .hero h2 {
+    html[data-theme] body.about .hero h2 {
         font-size: 2.5rem;
     }
     
-    html[theme] body.about .hero p {
+    html[data-theme] body.about .hero p {
         font-size: 1.2rem;
     }
 }
@@ -149,10 +149,10 @@ html[theme] .about-card a:hover {
 
 
 /* Allgemeine Stile */
-html[theme] .timeline-container {
+html[data-theme] .timeline-container {
     padding-bottom: 100px;
 }
-html[theme] .timeline {
+html[data-theme] .timeline {
     position: relative;
     padding: 0 20px 50px;
     max-width: 800px;
@@ -160,7 +160,7 @@ html[theme] .timeline {
 }
 
 /* Zentrale Linie */
-html[theme] .timeline-line {
+html[data-theme] .timeline-line {
     position: absolute;
     width: 4.5px;
     background-color: var(--accent);
@@ -173,7 +173,7 @@ html[theme] .timeline-line {
 
 
 /* Meilenstein-Punkte (Dots) */
-html[theme] .timeline-dot {
+html[data-theme] .timeline-dot {
     width: 22px;
     height: 22px;
     border-radius: 50%;
@@ -182,7 +182,7 @@ html[theme] .timeline-dot {
     z-index: 1;
 }
 
-html[theme] #dot1 {
+html[data-theme] #dot1 {
     background-color:#48C9B0 !important; 
     width: 30px !important; 
     height: 30px !important;
@@ -190,27 +190,27 @@ html[theme] #dot1 {
     margin-top: 15px;
 }
 
-html[theme="dark"] .timeline-line {
+html[data-theme="dark"] .timeline-line {
     box-shadow: inset 0px 0px 2px #000000ff;
     background-color: var(--accent);
 }
-html[theme="dark"] .timeline-dot {
+html[data-theme="dark"] .timeline-dot {
     box-shadow: inset 0px 0px 7px #000000e0;
     background-color: var(--accent);
 }
 
-html[theme="light"] .timeline-line {
+html[data-theme="light"] .timeline-line {
     box-shadow: inset 0px 0px 5px #0000005e;
     background-color: #ffb224;
 }
 
-html[theme="light"] .timeline-dot {
+html[data-theme="light"] .timeline-dot {
     box-shadow: inset 0px 0px 8px #0000007e;
     background-color: #ffb224;
 }
 
 /* Timeline Cards (Floating) */
-html[theme] .timeline-card {
+html[data-theme] .timeline-card {
     background-color: var(--bg);
     border-radius: 3px;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
@@ -223,16 +223,16 @@ html[theme] .timeline-card {
     transform: translateY(30px);
 }
 
-html[theme="light"] .timeline-card {
+html[data-theme="light"] .timeline-card {
     background-color: #f8f8f8;
 }
 
-html[theme] .timeline-card h3 {
+html[data-theme] .timeline-card h3 {
     color: var(--link);
 }
 
 /* Dreieck-Indicator (visuelle Verbindung zwischen Karte & Punkt) */
-html[theme] .timeline-indicator {
+html[data-theme] .timeline-indicator {
     position: absolute;
     width: 0;
     height: 0;
@@ -241,7 +241,7 @@ html[theme] .timeline-indicator {
 
 /* generally, the indicator should be left. if not, see in mediaquery*/
 @media screen and (max-width:768px) {
-    html[theme] .timeline-item .timeline-indicator {
+    html[data-theme] .timeline-item .timeline-indicator {
         top: 73px;
         left: 0;
         transform: translate(-100%,0);
@@ -254,36 +254,36 @@ html[theme] .timeline-indicator {
 }
 
 
-html[theme] .timeline-card:hover {
+html[data-theme] .timeline-card:hover {
     transition: transform 0s ease-out;
     transform: translateY(-3px) !important;
     box-shadow: 0 6px 13px rgba(0, 0, 0, 0.4);
 }
 
 
-html[theme] .timeline-card img {
+html[data-theme] .timeline-card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 3px;
 }
 
-html[theme] .timeline-text {
+html[data-theme] .timeline-text {
     text-align: left;
     margin-top: 10px;
 }
 
-html[theme] .timeline-text h3 {
+html[data-theme] .timeline-text h3 {
     font-size: 1.3rem;
     margin-bottom: 5px;
 }
 
-html[theme] .timeline-text p {
+html[data-theme] .timeline-text p {
     font-size: 1rem;
     color: var(--text-color);
 }
 
-html[theme] .timeline-info {
+html[data-theme] .timeline-info {
     font-size: 1rem;
     font-weight: bold;
     color: #1d2125;
@@ -298,42 +298,42 @@ html[theme] .timeline-info {
 }
 
 /* Animation – Karten erscheinen beim Scrollen */
-html[theme] .timeline-card.appear {
+html[data-theme] .timeline-card.appear {
     opacity: 1;
     transform: translateY(0);
 }
 
 /* Desktop-Optimierung */
 @media screen and (min-width: 768px) {
-    html[theme] .timeline-line {
+    html[data-theme] .timeline-line {
         left: 50%;
         transform: translateX(-50%);
     }
-    html[theme] .timeline-dot {
+    html[data-theme] .timeline-dot {
         left: 50%;
         transform: translateX(-50%);
     }
-    html[theme] #dot1 {
+    html[data-theme] #dot1 {
         left: 50%;
     }
 
-    html[theme] .timeline-card {
+    html[data-theme] .timeline-card {
         width: 40%;
         margin: 10px;
         margin-bottom: -70px !important;
     }
 
-    html[theme] .timeline-item:nth-child(odd) .timeline-card {
+    html[data-theme] .timeline-item:nth-child(odd) .timeline-card {
         left: 20px;
         text-align: right;
     }
 
-    html[theme] .timeline-item:nth-child(odd)  .timeline-info{
+    html[data-theme] .timeline-item:nth-child(odd)  .timeline-info{
         left: 50%;
         margin-left: 50px;
     }
 
-    html[theme] .timeline-item:nth-child(odd) .timeline-indicator {
+    html[data-theme] .timeline-item:nth-child(odd) .timeline-indicator {
         top: 20px;
         right: 0;
         transform: translate(100%,0);
@@ -345,18 +345,18 @@ html[theme] .timeline-card.appear {
         
     }
 
-    html[theme] .timeline-item:nth-child(even) .timeline-card {
+    html[data-theme] .timeline-item:nth-child(even) .timeline-card {
         left: calc(50% + 50px);
         text-align: left;
     }
 
-    html[theme] .timeline-item:nth-child(even)  .timeline-info {
+    html[data-theme] .timeline-item:nth-child(even)  .timeline-info {
         right: calc(-50%);
         margin-left: -50px;
         transform: translate(-100%,0);
     }
 
-    html[theme] .timeline-item:nth-child(even)  .timeline-indicator {
+    html[data-theme] .timeline-item:nth-child(even)  .timeline-indicator {
         top: 20px;
         left: 0;
         transform: translate(-100%,0);
@@ -367,7 +367,7 @@ html[theme] .timeline-card.appear {
         filter: drop-shadow(-4px 0px 2px rgba(0, 0, 0, 0.18)); /* Sanfte Schattierung für mehr Tiefe */
     }
 
-    html[theme] .timeline-info {
+    html[data-theme] .timeline-info {
         display: block;
     }
 }
