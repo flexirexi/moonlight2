@@ -1,6 +1,7 @@
 document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
-
+    alert("test");
+    
     const formData = new FormData(this);
     const data = Object.fromEntries(formData.entries());
 
@@ -22,6 +23,6 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     const subject = "Neue Anfrage über das Kontaktformular";
     const body = encodeURIComponent(message);
 
-    window.location.href = `mailto:${mailTo}?subject=${subject}&body=${body}`;
+    // window.location.href = `mailto:${mailTo}?subject=${subject}&body=${body}`;
     console.log(body);
 });
