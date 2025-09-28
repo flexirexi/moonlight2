@@ -2,7 +2,7 @@
   "tHome":             "Home",
   "tStudio":           "Studio",
   "tTeam":             "Über Uns",
-  "tServices":         "Anbebot",
+  "tServices":         "Angebot",
   "tLogoAltText":      "Logo-Bild",
   "tLandingPageText":  "A\n modern studio\n in a great community", 
   
@@ -103,6 +103,11 @@
 
   "tContactOtherNo":				"Nein",
   "tContactOtherSongwriting":		"Songwriting (bitte beschreiben)",
-  "tContactOtherIndividual":		"Individuelles Projekt (bitte näher erklären)"
-
+  "tContactOtherIndividual":		"Individuelles Projekt (bitte näher erklären)",
+  
+  "tTeam1":		"Robin Hughes",
+  "tTeam1Text":	"Kommt noch. In der Zwischenzeit, frag ihn doch.",
+  
+  "tTeam2":		"Felix Lehmann",
+  "tTeam2Text":	"Kommt noch. In der Zwischenzeit, frag ihn doch."
 }

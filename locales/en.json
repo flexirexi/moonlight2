@@ -102,6 +102,11 @@
 
     "tContactOtherNo":				"No",
     "tContactOtherSongwriting":		"Songwriting (please specify)",
-    "tContactOtherIndividual":		"Individual project (please specify)"
+    "tContactOtherIndividual":		"Individual project (please specify)",
 
+	"tTeam1":		"Robin Hughes",
+	"tTeam1Text":	"Coming soon. In the meantime, ask him.",
+	
+	"tTeam2":		"Felix Lehmann",
+	"tTeam2Text":	"Coming soon. In the meantime, ask him."
 }

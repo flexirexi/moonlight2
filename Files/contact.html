@@ -78,7 +78,7 @@
                     <label class="important"  for="recording" data-lang="tContactRecording">Recording</label>
                     <select id="recording" name="recording">
                         <option value="none" data-lang="tContactRecordingNo" selected>Nein</option>
-                        <option value="voice" data-lang="tContactRecordingVoice" >Voice Recording</option>
+                        <option value="voice" data-lang="tContactRecordingVoice" >Vocal recording (solo)</option>
                         <option value="other" data-lang="tContactRecordingOther" >Other</option>
                     </select>
                 </div>
@@ -87,8 +87,10 @@
                     <label class="important"  for="production" data-lang="tContactProduction">Production</label>
                     <select id="production" name="production">
                         <option value="none" data-lang="tContactProductionNo" selected>Nein</option>
-                        <option value="mix" data-lang="tContactProductionMix">Mix</option>
-                        <option value="remake" data-lang="tContactProductionRemake">Remake</option>
+                        <option value="none" data-lang="tContactProductionEditing">Audio editing</option>
+                        <option value="mix" data-lang="tContactProductionMix">Mixing</option>
+                        <option value="remake" data-lang="tContactProductionRemix">Remixes</option>
+                        <option value="remake" data-lang="tContactProductionOther">Other</option>
                     </select>
                 </div>
 
@@ -96,9 +98,8 @@
                     <label class="important" for="composition" data-lang="tContactComposition">Komposition</label>
                     <select id="composition" name="composition">
                         <option value="none" data-lang="tContactCompositionNo" selected>Nein</option>
-                        <option value="film" data-lang="tContactCompositionFilm">Für Film/Werbung</option>
                         <option value="instrumental" data-lang="tContactCompositionInstr">Instrumentale Komposition</option>
-                        <option value="sequences" data-lang="tContactCompositionForSong">Sequenzen für deinen Song</option>
+                        <option value="film" data-lang="tContactCompositionFilm">Für Film/Werbung</option>
                     </select>
                 </div>
 
@@ -106,8 +107,7 @@
                     <label class="important"  for="other" data-lang="tContactOther">Sonstiges</label>
                     <select id="other" name="other">
                         <option value="none" data-lang="tContactOtherNo" selected>Nein</option>
-                        <option value="songwriting" data-lang="tContactOtherSongwriting">Songwriting</option>
-                        <option value="custom" data-lang="tContactOtherIndividual">Individuelles Projekt</option>
+                        <option value="songwriting" data-lang="tContactOtherOther">Other</option>
                     </select>
                 </div>
 
