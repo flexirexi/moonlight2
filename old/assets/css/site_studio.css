@@ -1,0 +1,94 @@
+/* IMPORT AUS MAIN.CSS ERFOLGT DORT, DAMIT DIE VARIABLEN VERFÜGBAR SIND */
+
+/* Hauptcontainer mit max-width */
+html[data-theme] body.studio {
+    background-color: var(--bg);
+}
+
+html[data-theme="light"] body.studio {
+    background-color: white;
+}
+
+html[data-theme] body.studio main.container {
+    width: 100%;
+    padding: 0;
+    margin-top: 55px;
+    background-color: #00000020;
+    max-width: 900px;
+}
+
+html[data-theme="light"] body.studio main.container {
+    background-color: #d8d8d8;
+
+}
+
+
+html[data-theme] body.studio section {
+    margin: 0px auto;
+}
+ 
+html[data-theme] .studio-section {
+    padding: 20px 20px;
+    max-width: 900px;
+}
+
+html[data-theme] .studio-section h2 {
+    margin-top: 20px;
+
+}
+
+html[data-theme] body.studio .gallery {
+    margin-top: 60px;
+}
+
+/* Galerie-Layout */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(auto, max-content);
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+
+}
+
+.gallery img {
+    object-fit: cover;
+    border-radius: 0px;
+    max-height: unset;
+    max-width: 100%;
+    margin: 0 0;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.7);
+    clip-path: inset(0px -10px -10px -10px);
+
+}
+
+html[data-theme] body.studio main section * {
+    margin-bottom: 0;
+}
+
+html[data-theme] body.studio .map-container {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERY: Anpassungen für größere Screens */
+@media (min-width: 768px) {
+    html[data-theme] body.studio main.container {
+        padding: 0px;
+    }
+
+    .gallery img {
+        max-height: 250px;
+    }
+
+    
+
+}

@@ -1,0 +1,112 @@
+{
+    "tHome":             "Home",
+    "tStudio":           "Studio",
+    "tTeam":             "About us",
+    "tServices":         "Services",
+    "tLogoAltText":      "Logo",
+    "tLandingPageText":  "A\n modern studio\n in a great community", 
+    
+    "tWelcomeSection":      "Welcome to Moonlight Studios",
+    "tWelcomeSectionText":  "We are a modern, digital music studio, dedicated to helping you with the production and composition of your music. Whether you want to record vocals, plan a remake, need your songs mixed, or simply require a song master – you’re in the right place with us. We run the studio as a duo and continuously expand our expertise, especially in digital production. This makes us flexible and keeps our services cost-effective.",
+    "tWelcomeSectionBtn":   "About us",
+  
+    "tOurServices":         "Our Services",
+    "tOurServicesText":     "Essentially, we cover two main areas: digital production and songwriting/composition. <br><br>Digital production is the craftsmanship behind modern music. Just let us know at which stage of the production process you need our assistance, and we’ll complement your work accordingly. Of course, we can also guide you through the entire production of your music.<br><br>Songwriting and composition, on the other hand, represent the artistic side of our services. This includes production music for film and advertising, as well as popular music genres like rock, pop, or EDM. Take a few minutes to tell us about your project, and we’ll determine individually how we can approach it together!",
+    "tOurServicesBtn":      "To Services",
+  
+    "tWhatSoundLike":        "What we sound like",
+    "tWhatSoundLikeText":    "It is essential to make a strong first impression by showcasing what we can do. That’s why we have listed a selection of takes below. We have deliberately explored a wide range of genres and styles. The selection includes both original compositions and productions in popular music.", 
+  
+    "tContact":              "Contact",
+    "tContactText":          "Let’s talk about your next music project. Click on 'Contact us' and fill the form quickly.",
+    "tContactBtn":            "Contact us",
+
+    "tRecordingTitle": "RECORDING",
+    "tRecordingText": "High-quality recordings for vocals and instruments in professional studio quality.",
+
+    "tVoiceRecording": "Voice Recording",
+    "tVoiceRecordingText": "Recordings for singers, speakers & artists with high-end equipment.",
+
+    "tInstrumentRecording": "Instrument Recording",
+    "tInstrumentRecordingText": "Instrumental recordings for bands, solo artists, and orchestral musicians.",
+
+    "tVoiceover": "Voiceover",
+    "tVoiceoverText": "Professional voice recordings for podcasts, audiobooks & commercials.",
+
+    "tProductionTitle": "PRODUCTION",
+    "tProductionText": "Mixing, mastering & music production for your unique sound.",
+
+    "tMixing": "Mixing",
+    "tMixingText": "Professional mixing for the perfect sound of your song.",
+
+    "tMastering": "Mastering",
+    "tMasteringText": "Finishing touch for your music with state-of-the-art mastering techniques.",
+
+    "tRemakes": "Remakes",
+    "tRemakesText": "Reinterpretations & adjustments of existing music productions.",
+
+    "tCompositionTitle": "COMPOSITION",
+    "tCompositionText": "Custom music composition for film, advertising, and artists.",
+
+    "tAppliedMusic": "Applied Music",
+    "tAppliedMusicText": "Music for films, commercials, and events, tailored to your needs.",
+
+    "tInstrumentalPieces": "Instrumental Pieces",
+    "tInstrumentalPiecesText": "Instrumental music for various genres – from classical to modern.",
+
+    "tSongSequences": "Sequences for Your Songs",
+    "tSongSequencesText": "Custom music sequences for your project – from melodies to sound effects.",
+
+    "tOtherTitle": "OTHER",
+    "tOtherText": "Do you have a special idea for a project? Contact us!",
+    
+    "tMore": "More...",
+
+
+
+    "tOurStudio": "Our Studio",
+    "tOurStudioText": "<br>Our studio is new, digital, and modern. We work with high-quality VST plugins and use software such as Kontakt, Izotope, Serum, and Reaktor. Our hardware is up to date, allowing for fast and efficient production processes. In addition to a vocal booth, we have a MIDI keyboard with hammer action, guitars, and a bass. Further expansions are planned! Additionally, we continuously educate ourselves in the field of audio engineering to consistently deliver top quality.",
+    
+    "tOurZentrum": "The Musikerzentrum Rodgau",
+    "tOurZentrumText": "<br>Our studio is located in the Musikerzentrum Rodgau, a creative environment for musicians of all genres. Numerous rehearsal rooms, music teachers, and bands work here in an inspiring atmosphere. The center is accessible via the S-Bahn S1 (Rodgau-Weißkirchen station). In addition, there is a cafeteria and, of course, sanitary facilities available for all visitors.",
+    
+    "tJourney": "Journey",
+
+    "tContactHeader":    	"Send us a message",
+    "tContactSubtext":   	"Fill out the form and we’ll get back to you shortly.",
+    "tContactNameFirst": 	"First name",
+    "tContactNameLast": 	"Last name",
+    "tContactArtist":		"Artist name or Band (optional)",
+    "tContactPhone":		"Phone number",
+    "tContactEmail":		"Email",
+    "tContactRecording":	"Recording",
+    "tContactProduction":	"Production",
+    "tContactComposition":	"Composition",
+    "tContactOther":		"Other",
+    "tContactTitle":		"Title",
+    "tContactDescription":	"Description",
+    "tContactSubmit":		"Submit",
+
+    "tContactRecordingNo":			"No",	
+    "tContactRecordingVoice":		"Voice Recording (For a Song)",
+    "tContactRecordingOther":		"Other (please specify)",
+
+    "tContactProductionNo":			"No",
+    "tContactProductionMix":		"Mix",
+    "tContactProductionRemake":		"Other (please specify)",
+
+    "tContactCompositionNo":		"No",
+    "tContactCompositionFilm":		"For film or advertisement (please specify)",
+    "tContactCompositionInstr":		"Instrumental composition (please specify)",
+    "tContactCompositionForSong":	"Sequences for a song",
+
+    "tContactOtherNo":				"No",
+    "tContactOtherSongwriting":		"Songwriting (please specify)",
+    "tContactOtherIndividual":		"Individual project (please specify)",
+
+	"tTeam1":		"Robin Hughes",
+	"tTeam1Text":	"Coming soon. In the meantime, ask him.",
+	
+	"tTeam2":		"Felix Lehmann",
+	"tTeam2Text":	"Coming soon. In the meantime, ask him."
+}

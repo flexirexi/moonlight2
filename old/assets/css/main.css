@@ -1,0 +1,391 @@
+/* 
+INFO: 
+Bootstrap is used here -> in order to overwrite, use: 
+    <selector>[data-theme]           for elements in all themes, 
+    <selector>[data-theme="dark"]    for elements only in dark mode,
+    <selector>[data-theme=light"]    for elements only in light mode
+*/
+
+/* Google font imports */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700');
+@import url("themes.css");
+@import url("site_impressum.css");
+@import url("site_services.css");
+@import url("site_studio.css");
+@import url("site_about.css");
+@import url("site_contact.css");
+
+
+/* 01 Generic STYLES that apply for all html pages --------------------------- */
+html[data-theme] * {
+    font-family: "Ubuntu", sans-serif;
+    color: var(--text);
+    box-sizing: border-box;
+}
+
+html[data-theme] main {
+    padding: 0;
+}
+
+html[data-theme] .fa,
+html[data-theme] .fas {
+    font-family: "Font Awesome 8 Free", "Font Awesome 7 Free", "Font Awesome 6 Free", "Font Awesome 5 Free";     /* that's important otherwise the icons won't be shown */
+    font-weight: 900;
+}
+
+html[data-theme] .fab {
+    font-family: "Font Awesome 8 Brands", "Font Awesome 7 Brands", "Font Awesome 6 Brands", "Font Awesome 5 Brands";
+}
+
+html[data-theme] body {
+    background-color: var(--bg);
+}
+
+html[data-theme] h1,
+html[data-theme] h2,
+html[data-theme] h3,
+html[data-theme] h4,
+html[data-theme] h5,
+html[data-theme] h6 {
+    color: var(--title);
+    text-shadow: 1px 2px 4px var(--title-shadow);
+}
+
+html[data-theme] a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+html[data-theme] .navbar {
+    background-color: var(--nav-bg);
+}
+
+html[data-theme] summary {
+    list-style: none; /* Entfernt den Standard-Pfeil */
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none; /* Entfernt den Standard-Pfeil in Webkit-Browsern (Chrome, Safari) */
+}
+
+summary::after {
+    content: "▼";
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+html[data-theme="light"] footer {
+    background-color: var(--bg2);
+}
+
+html[data-theme="dark"] .footer {
+    background-color: var(--nav-bg);
+}
+
+/* 02 General classes for all pages ------------------------------------------ */
+html[data-theme] .nav-contact-btn {
+    width: fit-content;
+    text-align: center;
+    font-weight: bold;
+    padding: 7px 16px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    background-color: var(--act-bg);
+    border: 1px solid transparent;
+    color: var(--nav-bg);
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out, border 0.1 ease-in-out;
+    border-radius: 5px;
+    white-space: nowrap; /* Verhindert Zeilenumbrüche */
+    margin-left: 20px;
+}
+
+html[data-theme] .nav-contact-btn:hover {
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    color: black;
+    text-decoration: none;
+}
+
+html[data-theme] .navbar .nav-contact-btn {
+    display: inline-block; /* Stellt sicher, dass er neben dem data-theme-Toggle bleibt */
+}
+
+html[data-theme] #btnContactMobile {
+    display: inline;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+html[data-theme] #btContactDesktop {
+    display: none;
+}
+
+html[data-theme] .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: transparent;
+}
+
+/* Headline Positionierung */
+html[data-theme] .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 90%;
+    font-weight: bold;
+    line-height: 1.2;   
+    text-shadow: 2px 3px 6px #000000c8;
+}
+
+html[data-theme] .hero-text * {
+    color: #ecf0f1;
+}
+
+html[data-theme] .hero-text .small {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+html[data-theme] .hero-text .xxl {
+    font-size: clamp(1.75rem, 8vw, 4.5rem);
+}
+
+html[data-theme] .hero-text .line {
+    display: block;
+}
+
+html[data-theme] .hero-text .gap {
+    word-spacing: 20px;
+}
+
+html[data-theme] .hero-text .text-start {
+    margin-left: 5%;
+}
+
+/* Dynamische Verschiebung basierend auf Seitenverhältnis */
+@media (min-aspect-ratio: 16/9) {
+    html[data-theme] .hero-text {
+        top: 45%; /* Höher platzieren, wenn breiter als 16:9 */
+    }
+}
+
+@media (max-aspect-ratio: 4/3) {
+    html[data-theme] .hero-text {
+        top: 55%; /* Etwas niedriger setzen, wenn fast quadratisch */
+    }
+}
+
+html[data-theme] nav a {
+    margin: 0 6px;
+    font-size: 1.2rem;
+}
+
+html[data-theme] nav a:hover {
+    text-decoration: 1px underline;
+    text-underline-offset: 4px;
+}
+
+html[data-theme] .nav-link {
+    color: #ecf0f1;
+}
+
+html[data-theme] .nav-link:hover {
+    color: #1abc9c;
+    text-decoration: 1px underline white;
+    text-underline-offset: 5px;
+}
+
+html[data-theme] #navbarNav ul li {
+    margin: 0 5px;
+}
+
+/* Container für das Slideshow-Element */
+.slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* GANZE HÖHE DES BILDSCHIRMS */
+    overflow: hidden;
+}
+
+/* Alle Bilder übereinander stapeln */
+.slideshow img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    filter: brightness(42%);
+}
+
+/* Animations-Delay für die einzelnen Bilder */
+.slideshow img:nth-child(1) { animation: fade-first 28s infinite; animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation: fade 28s infinite; animation-delay: 4s; }
+.slideshow img:nth-child(3) { animation: fade 28s infinite; animation-delay: 8s; }
+.slideshow img:nth-child(4) { animation: fade 28s infinite; animation-delay: 12s; }
+.slideshow img:nth-child(5) { animation: fade 28s infinite; animation-delay: 16s; }
+.slideshow img:nth-child(6) { animation: fade 28s infinite; animation-delay: 20s; }
+
+/* Fade-In/Fade-Out Animation */
+@keyframes fade-first {
+    0% { opacity: 1; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+/* Main Sections */
+html[data-theme] main section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+html[data-theme="light"] body.index main section {
+    background-color: #ebebeb;
+}
+
+html[data-theme] main section * {
+    margin-bottom: 20px;
+}
+
+html[data-theme] .mb-2 a:hover {
+    color: var(--link-text-hover);
+    text-decoration: 1px underline;
+    text-underline-offset: 4px;
+}
+
+html[data-theme] #audio-list details p {
+    color: var(--text2);
+    background-color: #00000013;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+/* Social Media Icons: Space-Around */
+html[data-theme] .footer .mb-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+    min-height: 60px;
+}
+
+html[data-theme] .mb-0 {
+    color: var(--text2);
+}
+
+html[data-theme] .mb-2 {
+    min-height: 60px;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+/* Icons zentrieren */
+html[data-theme] .footer a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+html[data-theme] #social-links i:hover {
+    color: var(--link);
+}
+
+/* Buttons */
+html[data-theme] .btn-primary {
+    color: var(--act-text);
+    border-color: var(--act-border);
+    background-color: var(--act-bg);
+}
+
+html[data-theme] .btn-primary:hover {
+    color: var(--act-text-hover);
+    border-color: var(--act-border-hover);
+    background-color: var(--act-bg-hover);
+}
+
+
+
+/* 03 specific elements ----------------------------------------------------- */
+html[data-theme] .brand {
+    margin-left: 10px;
+}
+
+html[data-theme] #language-toggle {
+    margin-top: 10px;
+    margin-left: 20px;
+    min-width: 55px;
+}
+
+html[data-theme] #theme-toggle {
+    margin-top: 10px;
+    margin-left: 20px;
+    min-width: 45px;
+}
+
+
+
+/* MEDIA QUERIES ------------------------------------------------------------ */
+@media (min-width: 768px) {
+    html[data-theme] .nav-contact-btn {
+        width: auto;
+        text-align: left;
+    }
+
+
+    html[data-theme] main section {
+        padding: 0 30px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    html[data-theme] #btnContactMobile {
+        margin: 0;
+        display: none;
+    }
+
+    html[data-theme] #btContactDesktop {
+        display: flex;
+        margin: auto 20px auto;
+    }
+
+    html[data-theme] #language-toggle,
+    html[data-theme] #theme-toggle {
+        margin-top: unset;
+        margin-left: unset;
+    }
+}
+

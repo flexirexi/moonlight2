@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlight Studios</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logos/favicon_white.png">
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="studio">
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/logos/logo_10.png" alt="Moonlight Studios Logo" height="28" class="me-2">
+            </a>
+            <a id="btnContactMobile" href="contact.html" class="btn nav-contact-btn" data-lang="tNavContact">Kontakt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a data-lang="tStudio" class="nav-link" href="studio.html" style="color: #48C9B0;">Studio</a></li>
+                    <li class="nav-item"><a data-lang="tServices" class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a data-lang="tTeam" class="nav-link" href="about.html">About us</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a id="btContactDesktop"  href="contact.html" class="btn btn-outline-light nav-contact-btn" data-lang="tNavContact">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light" id="theme-toggle">
+                            <i class="fas fa-sun" style="color: #b7b7b7;"></i> 
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light" id="language-toggle" style="color: #b7b7b7;">DE</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <!-- Unser Studio Abschnitt -->
+        <section class="studio-section">
+            <h2 data-lang="tOurStudio">Unser Studio</h2>
+            <p data-lang="tOurStudioText">
+                Unser Studio ist neu, digital und modern. Wir arbeiten mit hochwertigen VST-Plugins und nutzen 
+                Software wie Kontakt, Izotope, Serum und Reaktor. Unsere Hardware ist auf dem neuesten Stand,
+                was schnelle und effiziente Produktionsprozesse ermöglicht. Neben einer Gesangskabine verfügen
+                wir über ein MIDI-Keyboard mit Hammermechanik, Gitarren und Bass. Weitere Erweiterungen sind geplant!
+                Zudem bilden wir uns kontinuierlich im Bereich Audio Engineering weiter, um stets beste Qualität zu liefern.
+            </p>
+            <div class="gallery">
+                <img src="assets/img/site_studio/studio01.jpg" alt="Studio Bild 1">
+                <img src="assets/img/site_studio/studio02.jpg" alt="Studio Bild 2">
+                <img src="assets/img/site_studio/studio03.jpg" alt="Studio Bild 3">
+                <img src="assets/img/site_studio/studio04.jpg" alt="Studio Bild 4">
+                <img src="assets/img/site_studio/studio05.jpg" alt="Studio Bild 5">
+            </div>
+        </section>
+    
+        <!-- Musikerzentrum Abschnitt -->
+        <section class="studio-section">
+            <h2 data-lang="tOurZentrum">Das Musikerzentrum</h2>
+            <p data-lang="tOurZentrumText">
+                Unser Studio befindet sich im Musikerzentrum Rodgau, einer kreativen Umgebung für Musiker aller Genres. 
+                Hier gibt es zahlreiche Proberäume, Musiklehrer und Bands, die in einer inspirierenden Atmosphäre arbeiten. 
+                Das Zentrum ist bequem mit der S-Bahn S1 erreichbar (Haltestelle Rodgau-Weißkirchen). 
+                Zudem gibt es eine Cafeteria und selbstverständlich sanitäre Anlagen für alle Besucher.
+            </p>
+            <div class="gallery">
+                <img src="assets/img/site_studio/mz_01.jpg" alt="Musikerzentrum Bild 1">
+                <img src="assets/img/site_studio/mz_02.jpg" alt="Musikerzentrum Bild 2">
+                <img src="assets/img/site_studio/mz_03.jpg" alt="Musikerzentrum Bild 3">
+                <img src="assets/img/site_studio/mz_04.jpg" alt="Musikerzentrum Bild 4">
+                <img src="assets/img/site_studio/mz_05.jpg" alt="Musikerzentrum Bild 5">
+            </div>
+        </section>
+
+        <!-- Google Maps Integration -->
+        <section class="studio-section">
+            <h2 data-lang="tJourney">Anfahrt</h2>
+            <div class="map-container">
+                <iframe 
+                    width="100%" 
+                    height="400" 
+                    frameborder="0" 
+                    style="border:0; margin-top: 15px;" 
+                    allowfullscreen 
+                    src="https://www.google.com/maps?q=Udenhoutstraße+2a+Rodgau&output=embed">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer class="footer text-center py-4">
+        <div class="container">
+            <!-- Social Media Icons -->
+            <div id="social-links" class="mb-3" style="display: none;">
+                <a href="#" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-x-twitter fa-2x"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+
+            <!-- Rechtliche Links -->
+            <div class="mb-2">
+                <a href="impressum.html" class="me-3">Impressum</a>
+                <a href="#" class="me-3">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+            <!-- copyright -->
+            <div>
+                <p class="mb-0">&copy; 2025 Moonlight Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/lang.js" defer></script>
+    <script src="assets/js/theme.js" defer></script>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/ee874b1d34.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+html[data-theme] .impressum-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+html[data-theme] .impressum-container h1 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+html[data-theme] .impressum-grid {
+    display: grid;
+    grid-template-columns: 1fr;  /* Standard: Eine Spalte für mobile Ansicht */
+    gap: 20px;
+}
+
+html[data-theme] .impressum-left,
+html[data-theme] .impressum-right {
+    text-align: left;
+}
+
+/* Ab 768px: Zwei-Spalten-Layout */
+@media (min-width: 768px) {
+    html[data-theme] .impressum-container {
+        padding: 50px;
+    }
+
+    html[data-theme] .impressum-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

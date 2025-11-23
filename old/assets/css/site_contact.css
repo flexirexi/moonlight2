@@ -1,0 +1,132 @@
+/* IMPORT AUS MAIN.CSS ERFOLGT DORT, DAMIT DIE VARIABLEN VERFÜGBAR SIND */
+
+html[data-theme] body.contact {
+    background-color: var(--bg);
+}
+
+html[data-theme="light"] body.contact {
+    background-color: white;
+}
+
+html[data-theme] body.contact main.container {
+    width: 100%;
+    padding: 0;
+    margin-top: 55px;
+    background-color: #00000030;
+    max-width: 900px;
+}
+
+html[data-theme="light"] body.contact main.container {
+    background-color: #a1a1a1 !important;
+}
+
+html[data-theme] body.contact section {
+    margin: 0px auto;
+}
+ 
+html[data-theme] .contact-section {
+    padding: 20px 20px;
+    max-width: 900px;
+}
+
+html[data-theme] .contact-section h2 {
+    margin-top: 20px;
+}
+
+html[data-theme] .contact-section p {
+    margin-top: 15px;
+}
+
+html[data-theme] body.contact main section * {
+    margin-bottom: 0;
+}
+
+html[data-theme] body.contact .map-container {
+    margin-top: 10px;
+}
+
+html[data-theme] .form-group-name-container {
+    display: grid;
+    gap: 0px;
+}
+
+html[data-theme] .form-group {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+
+}
+
+html[data-theme] .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+html[data-theme] .form-group input,
+html[data-theme] .form-group select,
+html[data-theme] .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--bg2);
+    color: var(--text-color);
+    
+}
+
+html[data-theme="light"] .form-group input,
+html[data-theme="light"] .form-group select,
+html[data-theme="light"] .form-group textarea {
+    background-color: var(--bg);
+}
+
+html[data-theme] .form-group textarea {
+    resize: none;
+}
+
+html[data-theme] .btn-primary {
+    background-color: var(--accent);
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+    
+}
+
+html[data-theme] .btn-primary:hover {
+    background-color: var(--accent-dark);
+}
+
+html[data-theme="dark"] .optional {
+    color: #b0b0b0;
+}
+
+html[data-theme="light"] .optional {
+    color: #606060;
+}
+
+html[data-theme="dark"] .important {
+    color: var(--accent);
+}
+
+html[data-theme="light"] .important {
+    color: #8e5c00;
+}
+
+/* MEDIA QUERY: Anpassungen für größere Screens */
+@media (min-width: 768px) {
+    html[data-theme] body.contact main.container {
+        padding: 0 35px 0;
+    }
+
+    html[data-theme] .form-group-name-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+

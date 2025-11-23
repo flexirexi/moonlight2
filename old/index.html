@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlight Studios</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/img/logos/favicon_white.png" />
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/img/logos/logo_10.png" alt="Moonlight Studios Logo" height="28" class="me-2">
+            </a>
+            <a id="btnContactMobile" href="contact.html" class="btn nav-contact-btn" data-lang="tNavContact">Kontakt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html" style="color: #48C9B0;">Home</a></li>
+                    <li class="nav-item"><a data-lang="tStudio" class="nav-link" href="studio.html">Studio</a></li>
+                    <li class="nav-item"><a data-lang="tServices" class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a data-lang="tTeam" class="nav-link" href="about.html">About us</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a id="btContactDesktop" href="contact.html" class="btn btn-outline-light nav-contact-btn" data-lang="tNavContact">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light" id="theme-toggle">
+                            <i class="fas fa-sun" style="color: #b7b7b7;"></i> <!-- Standard Icon für Dark Mode -->
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light" id="language-toggle" style="color: #b7b7b7;">DE</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="hero">
+        <div class="slideshow">
+            <img src="assets/img/site_landing_page/00_studio_2025_02.jpg" class="slide" alt="Image 1: studio">
+            <img src="assets/img/site_landing_page/studio_2025_01.jpg" class="slide" alt="Image 2: studio">
+            <img src="assets/img/site_landing_page/musikerzentrum_2025_01.jpg" class="slide" alt="Image 3: Musikzentrum">
+            <img src="assets/img/site_landing_page/studio_2025_03.jpg" class="slide" alt="Image 4: studio">
+            <img src="assets/img/site_landing_page/studio_2025_08.jpg" class="slide" alt="Image 5: studio">
+            <img src="assets/img/site_landing_page/studio_2025_09.jpg" class="slide" alt="Image 5: studio">
+        </div>
+        <!-- Headline über den Bildern -->
+        <div class="hero-text">
+            <span data-lang="tHeader11" class="small">A</span>
+            <span data-lang="tHeader21" class="xxl line">modern studio</span>
+            <span data-lang="tHeader31" class="small line text-start">in <span data-lang="tHeader32" class="gap">a </span><span data-lang="tHeader33" class="xxl">great community</span></span>
+        </div>
+    </header>
+
+    <main class="container text-center ">
+        <section id="about" class="py-5">
+            <h1 data-lang="tWelcomeSection">Welcome to Moonlight Studios</h1>
+            <p data-lang="tWelcomeSectionText">Professional music production with passion</p>
+            <a href="about.html" data-lang="tWelcomeSectionBtn" class="btn btn-primary learn-more-btn">Learn More</a>
+        </section>
+        <section id="services" class="py-5">
+            <h3 data-lang="tOurServices" >Our Services</h3>
+            <p data-lang="tOurServicesText">High-end music production tailored to your needs.</p>
+            <a href="services.html" data-lang="tOurServicesBtn" class="btn btn-primary">See Services</a>
+        </section>
+        <section id="whatSoundLike" class="py-5">
+            <h3 data-lang="tWhatSoundLike">What we sound like</h3>
+            <p data-lang="tWhatSoundLikeText">Explore the music we’ve created.</p>
+            <div id="audio-list">
+            </div>
+        </section>
+        <section id="contact" class="py-5">
+            <h3 data-lang="tContact">Contact Us</h3>
+            <p data-lang="tContactText">Let’s talk about your next music project.</p>
+            <a href="contact.html" data-lang="tContactBtn" class="btn btn-primary">Get in Touch</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-4">
+        <div class="container">
+            <!-- Social Media Icons -->
+            <div id="social-links" class="mb-3" style="display: none;">
+                <a href="#" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-x-twitter fa-2x"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+
+            <!-- Rechtliche Links -->
+            <div class="mb-2">
+                <a href="impressum.html" class="me-3">Impressum</a>
+                <a href="#" class="me-3">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+            <!-- copyright -->
+            <div>
+                <p class="mb-0">&copy; 2025 Moonlight Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/lang.js" defer></script>
+    <script src="assets/js/theme.js" defer></script>
+    <script src="assets/js/site_index.js" defer></script>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/ee874b1d34.js" crossorigin="anonymous"></script>
+</body>
+</html>

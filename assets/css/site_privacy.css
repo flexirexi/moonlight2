@@ -1,0 +1,37 @@
+html[data-theme] .privacy-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+html[data-theme] .privacy-container h1 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+html[data-theme] .privacy-grid {
+    display: grid;
+    grid-template-columns: 1fr;  /* Standard: Eine Spalte für mobile Ansicht */
+    gap: 20px;
+}
+
+html[data-theme] .privacy-left,
+html[data-theme] .privacy-right {
+    text-align: left;
+}
+
+html[data-theme] .bignums li::marker {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* Ab 768px: Zwei-Spalten-Layout */
+@media (min-width: 768px) {
+    html[data-theme] .privacy-container {
+        padding: 50px;
+    }
+
+    html[data-theme] .privacy-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

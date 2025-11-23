@@ -1,0 +1,373 @@
+/* IMPORT AUS MAIN.CSS ERFOLGT DORT, DAMIT DIE VARIABLEN VERFÜGBAR SIND */
+
+/* Hauptcontainer mit max-width */
+html[data-theme] body.about {
+    background-color: var(--bg);
+}
+
+html[data-theme="light"] body.about {
+    background-color: white;
+}
+
+html[data-theme] body.about main.container {
+    width: 100%;
+    padding: 0;
+    margin-top: 55px;
+}
+
+html[data-theme] body.about section {
+    margin: 0px auto;
+    max-width: 950px;
+
+}
+ 
+html[data-theme] body.about .about-section {
+    padding: 0;
+    background-color: #00000035;
+}
+
+html[data-theme="dark"] body.about .about-section {
+}
+
+/* HERO SECTION */
+html[data-theme] body.about .hero {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/* Overlay für bessere Lesbarkeit */
+html[data-theme] body.about .hero .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    padding: 35px 15px;
+}
+
+/* Überschrift im Hero */
+html[data-theme] body.about .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px black;
+    color: #fff;
+}
+
+/* Beschreibung im Hero */
+html[data-theme] body.about .hero p {
+    font-size: 0.9rem;
+    color: #ecf0f1;
+}
+
+/* GRID FÜR SERVICE CARDS */
+html[data-theme] .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    justify-content: center;
+    padding: 50px 30px;
+    margin-bottom: 0px;
+}
+
+html[data-theme="light"] .about-grid {
+    background-color: #d8d8d8;
+}
+
+/* STYLING DER SERVICE CARDS */
+html[data-theme] .about-card {
+    background-color: var(--bg2);
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+html[data-theme="light"] .about-card {
+    background-color: #f6f6f6;
+}
+
+html[data-theme] .about-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 13px rgba(0, 0, 0, 0.4);
+}
+
+html[data-theme] .about-card h3 {
+    color: var(--link);
+}
+
+html[data-theme] .about-card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--link);
+    text-decoration: none;
+}
+
+html[data-theme] .about-card a:hover {
+    text-decoration: underline;
+}
+
+/* MEDIA QUERY: Anpassungen für größere Screens */
+@media (min-width: 768px) {
+    html[data-theme] body.about main.container {
+        padding: 0px;
+    }
+
+    html[data-theme] body.about .about-card {
+        max-width: 280px;
+    }
+    
+    html[data-theme] body.about .hero .overlay {
+        width: 100%;
+    }
+    
+    html[data-theme] .about-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 50px 50px;
+    }
+    
+    html[data-theme] body.about .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    html[data-theme] body.about .hero p {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+/* Allgemeine Stile */
+html[data-theme] .timeline-container {
+    padding-bottom: 100px;
+}
+html[data-theme] .timeline {
+    position: relative;
+    padding: 0 20px 50px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Zentrale Linie */
+html[data-theme] .timeline-line {
+    position: absolute;
+    width: 4.5px;
+    background-color: var(--accent);
+    left: 29px;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    margin-top: 129px;
+}
+
+
+/* Meilenstein-Punkte (Dots) */
+html[data-theme] .timeline-dot {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: relative;
+    top: 120px;
+    z-index: 1;
+}
+
+html[data-theme] #dot1 {
+    background-color:#48C9B0 !important; 
+    width: 30px !important; 
+    height: 30px !important;
+    left: -4px;
+    margin-top: 15px;
+}
+
+html[data-theme="dark"] .timeline-line {
+    box-shadow: inset 0px 0px 2px #000000ff;
+    background-color: var(--accent);
+}
+html[data-theme="dark"] .timeline-dot {
+    box-shadow: inset 0px 0px 7px #000000e0;
+    background-color: var(--accent);
+}
+
+html[data-theme="light"] .timeline-line {
+    box-shadow: inset 0px 0px 5px #0000005e;
+    background-color: #ffb224;
+}
+
+html[data-theme="light"] .timeline-dot {
+    box-shadow: inset 0px 0px 8px #0000007e;
+    background-color: #ffb224;
+}
+
+/* Timeline Cards (Floating) */
+html[data-theme] .timeline-card {
+    background-color: var(--bg);
+    border-radius: 3px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
+    padding: 15px;
+    width: calc(100% - 60px);
+    margin-left: 50px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.3s ease-out;
+    transform: translateY(30px);
+}
+
+html[data-theme="light"] .timeline-card {
+    background-color: #f8f8f8;
+}
+
+html[data-theme] .timeline-card h3 {
+    color: var(--link);
+}
+
+/* Dreieck-Indicator (visuelle Verbindung zwischen Karte & Punkt) */
+html[data-theme] .timeline-indicator {
+    position: absolute;
+    width: 0;
+    height: 0;
+    transform: translateX(-50%);
+}
+
+/* generally, the indicator should be left. if not, see in mediaquery*/
+@media screen and (max-width:768px) {
+    html[data-theme] .timeline-item .timeline-indicator {
+        top: 73px;
+        left: 0;
+        transform: translate(-100%,0);
+        border-left: 18px solid transparent;
+        border-right: 18px solid var(--bg);
+        border-top: 18px solid transparent; /* Farbe der Karte */
+        border-bottom: 18px solid transparent;
+        filter: drop-shadow(-4px 0px 2px rgba(0, 0, 0, 0.18)); /* Sanfte Schattierung für mehr Tiefe */
+    }
+}
+
+
+html[data-theme] .timeline-card:hover {
+    transition: transform 0s ease-out;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 13px rgba(0, 0, 0, 0.4);
+}
+
+
+html[data-theme] .timeline-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+html[data-theme] .timeline-text {
+    text-align: left;
+    margin-top: 10px;
+}
+
+html[data-theme] .timeline-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+html[data-theme] .timeline-text p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+html[data-theme] .timeline-info {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1d2125;
+    background-color: var(--accent);
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+    top: 69px;
+    width: fit-content;
+    white-space: nowrap;
+    display: none;
+}
+
+/* Animation – Karten erscheinen beim Scrollen */
+html[data-theme] .timeline-card.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Desktop-Optimierung */
+@media screen and (min-width: 768px) {
+    html[data-theme] .timeline-line {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    html[data-theme] .timeline-dot {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    html[data-theme] #dot1 {
+        left: 50%;
+    }
+
+    html[data-theme] .timeline-card {
+        width: 40%;
+        margin: 10px;
+        margin-bottom: -70px !important;
+    }
+
+    html[data-theme] .timeline-item:nth-child(odd) .timeline-card {
+        left: 20px;
+        text-align: right;
+    }
+
+    html[data-theme] .timeline-item:nth-child(odd)  .timeline-info{
+        left: 50%;
+        margin-left: 50px;
+    }
+
+    html[data-theme] .timeline-item:nth-child(odd) .timeline-indicator {
+        top: 20px;
+        right: 0;
+        transform: translate(100%,0);
+        border-left: 18px solid var(--bg);
+        border-right: 18px solid transparent;
+        border-top: 18px solid transparent; /* Farbe der Karte */
+        border-bottom: 18px solid transparent;
+        filter: drop-shadow(4px 0px 2px rgba(0, 0, 0, 0.18)); /* Sanfte Schattierung für mehr Tiefe */
+        
+    }
+
+    html[data-theme] .timeline-item:nth-child(even) .timeline-card {
+        left: calc(50% + 50px);
+        text-align: left;
+    }
+
+    html[data-theme] .timeline-item:nth-child(even)  .timeline-info {
+        right: calc(-50%);
+        margin-left: -50px;
+        transform: translate(-100%,0);
+    }
+
+    html[data-theme] .timeline-item:nth-child(even)  .timeline-indicator {
+        top: 20px;
+        left: 0;
+        transform: translate(-100%,0);
+        border-left: 18px solid transparent;
+        border-right: 18px solid var(--bg);
+        border-top: 18px solid transparent; /* Farbe der Karte */
+        border-bottom: 18px solid transparent;
+        filter: drop-shadow(-4px 0px 2px rgba(0, 0, 0, 0.18)); /* Sanfte Schattierung für mehr Tiefe */
+    }
+
+    html[data-theme] .timeline-info {
+        display: block;
+    }
+}
